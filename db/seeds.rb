@@ -11,7 +11,8 @@ characters = [
   ['Subzero', 'Icy Grandmaster of the Lin Kuei Clan.'],
   ['Cassie Cage', 'Special Forces sergeant; bane of Shinnok.'],
   ['Kitana', 'Princess of Edenia and stepdaughter to the deceased Shao Kahn.'],
-  ['Kenshi', 'A blind, telekinetic swordsman wielding the ancient Katana, Sento.']
+  ['Kenshi', 'A blind, telekinetic swordsman wielding the ancient Katana, Sento.'],
+  ['Sonya Blade', 'General of the Earthrealm Special Forces unit.']
 ]
 
 characters.each do |character|
