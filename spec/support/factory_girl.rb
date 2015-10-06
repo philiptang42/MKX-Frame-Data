@@ -7,4 +7,9 @@ FactoryGirl.define do
     password_confirmation 'password'
   end
 
+  factory :character do
+    sequence(:name) { |n| "character#{n}" }
+    description "This is a character in Mortal Kombat X"
+  end
+
 end
