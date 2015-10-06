@@ -210,28 +210,29 @@ $include-html-global-classes: $include-html-classes;
 // $include-html-type-classes: $include-html-classes;
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family;
+$header-font-family: "MKXfont";
 // $header-font-weight: $font-weight-normal;
-// $header-font-style: normal;
+$header-font-style: normal;
 // $header-font-color: $jet;
-// $header-line-height: 1.4;
-// $header-top-margin: .2rem;
-// $header-bottom-margin: .5rem;
-// $header-text-rendering: optimizeLegibility;
+$header-line-height: 1.4;
+$header-top-margin: .2rem;
+$header-bottom-margin: .5rem;
+$header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
 // $h1-font-size: rem-calc(44);
 // $h2-font-size: rem-calc(37);
 // $h3-font-size: rem-calc(27);
-// $h4-font-size: rem-calc(23);
+$h4-font-size: rem-calc(100);
 // $h5-font-size: rem-calc(18);
 // $h6-font-size: 1rem;
+
 
 // We use these to control header size reduction on small screens
 // $h1-font-reduction: rem-calc(10);
 // $h2-font-reduction: rem-calc(10);
 // $h3-font-reduction: rem-calc(5);
-// $h4-font-reduction: rem-calc(5);
+$h4-font-reduction: rem-calc(5);
 // $h5-font-reduction: 0;
 // $h6-font-reduction: 0;
 
@@ -1404,12 +1405,12 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-bg: $topbar-bg-color;
 
 // Height and margin
-// $topbar-height: rem-calc(45);
+$topbar-height: rem-calc(57);
 // $topbar-margin-bottom: 0;
 
 // Controlling the styles for the title in the top bar
 // $topbar-title-weight: $font-weight-normal;
-// $topbar-title-font-size: rem-calc(17);
+$topbar-title-font-size: rem-calc(25);
 
 // Set the link colors and styles for top-level nav
 // $topbar-link-color: $white;
@@ -1417,16 +1418,16 @@ $include-html-global-classes: $include-html-classes;
 // $topbar-link-color-active: $white;
 // $topbar-link-color-active-hover: $white;
 // $topbar-link-weight: $font-weight-normal;
-// $topbar-link-font-size: rem-calc(13);
+$topbar-link-font-size: rem-calc(20);
 // $topbar-link-hover-lightness: -10%; // Darken by 10%
 // $topbar-link-bg: $topbar-bg;
 // $topbar-link-bg-hover: $jet;
 // $topbar-link-bg-color-hover: $charcoal;
 // $topbar-link-bg-active: $primary-color;
 // $topbar-link-bg-active-hover: scale-color($primary-color, $lightness: -14%);
-// $topbar-link-font-family: $body-font-family;
+$topbar-link-font-family: MKXfont;
 // $topbar-link-text-transform: none;
-// $topbar-link-padding: ($topbar-height / 3);
+$topbar-link-padding: rem-calc(0);
 // $topbar-back-link-size: rem-calc(18);
 // $topbar-link-dropdown-padding: rem-calc(20);
 // $topbar-button-font-size: .75rem;
