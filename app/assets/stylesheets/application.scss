@@ -26,12 +26,31 @@
     background-attachment: fixed;
     background-size: cover;
     position: relative;
-
   }
 
-  .name {
-    display: inline-block;
-    height: 25px;
+  #register-button {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
+
+  .panel {
+    background:rgba(255,255,255,0.35);
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+
+  .index_row {
+    max-width: 90rem;
+  }
+
+  .index-name {
+    text-align: center;
+  }
+
+  .index-pic {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .top-bar .name h4 a:before {
@@ -42,4 +61,24 @@
     height: 57px;
     position: relative;
     width: 60px;
+  }
+
+  .hvr-grow {
+    display: block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+  .hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
   }

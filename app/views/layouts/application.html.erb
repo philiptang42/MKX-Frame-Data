@@ -18,13 +18,13 @@
       <ul class="right">
         <%- if current_user -%>
           <li class="divider"></li>
-          <li><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
+          <li class="register-button"><%= link_to 'Sign Out', destroy_user_session_path, method: :delete %></li>
           <li class="divider"></li>
         <%- else -%>
           <li class="divider"></li>
-          <li><%= link_to 'Sign Up', new_user_registration_path %></li>
+          <li id="register-button"><%= link_to 'Sign Up', new_user_registration_path %></li>
           <li class="divider"></li>
-          <li><%= link_to 'Sign In', new_user_session_path %></li>
+          <li id="register-button"><%= link_to 'Sign In', new_user_session_path %></li>
           <li class="divider"></li>
         <%- end -%>
       </ul>
