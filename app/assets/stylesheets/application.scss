@@ -22,10 +22,11 @@
 
   body {
     background-image: no-repeat;
-    background-image: url('MKX-wallpaper.png');
+    background-image: url('lin-kuei-temple.jpg');
     background-attachment: fixed;
-    background-position: 50% 28.5%;
+    background-size: cover;
     position: relative;
+
   }
 
   .name {
@@ -39,6 +40,6 @@
     content: "[]";
     display: inline-block;
     height: 57px;
-    position: left;
+    position: relative;
     width: 60px;
   }
