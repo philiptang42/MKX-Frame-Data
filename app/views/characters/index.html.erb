@@ -1,3 +1,24 @@
+<!DOCTYPE html>
 <body>
+  <br>
+  <br>
+  <div class = "row index_row">
 
+    <div class = "small-10  medium-11 small-centered large-11 column">
+      <ul class = "small-block-grid-1 medium-block-grid-2 large-block-grid-5" >
+
+        <% @characters.each do |character| %>
+            <li>
+              <div class="panel">
+                  <div class="index-name"><h3><%= character.name %></h3></div>
+                  <div style="display:flex;justify-content:center;align-items:center;">
+                    <div><%= image_tag "character_icons/#{character.name}-Icon.png",
+                     :class =>"hvr-grow" %></div>
+                  </div>
+              </div>
+            </li>
+        <% end %>
+      </ul>
+    </div>
+  </div>
 </body>
