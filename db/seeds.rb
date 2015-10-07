@@ -38,3 +38,5 @@ characters.each do |character|
   name, description = character
   c = Character.find_or_create_by!(name: name, description: description)
 end
+
+User.create(email: ENV['admin_email'], password: ENV['admin_pass'], admin: true)

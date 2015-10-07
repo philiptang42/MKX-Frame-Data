@@ -15,11 +15,42 @@
  *= require foundation_and_overrides
 
  */
+
+ .the-index-page {
+   background-image: url('sky-temple.jpg');
+   background-image: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   background-color: black;
+   position: relative;
+ }
+
+//defining the unique font used across the site
   @font-face {
     font-family: "MKXfont";
     src: font-url('MKXfont.ttf');
   }
 
+//defining background images for specific character show pages. Yeah, all 25
+  .Scorpion {
+    background-image: image-url("character_backgrounds/Scorpion-Left.png");
+    background-attachment: fixed;
+    background-image: no-repeat;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+  }
+
+  .Goro {
+    background-image: image-url("character_backgrounds/Goro-Left.png");
+    background-attachment: fixed;
+    background-image: no-repeat;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+  }
+
+//the default background image
   .the-show-page {
     background-image: no-repeat;
     background-attachment: fixed;
@@ -28,13 +59,14 @@
     position: relative;
   }
 
-  .the-index-page {
-    background-image: no-repeat;
-    background-image: url('sky-temple.jpg');
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: black;
+  .top-bar .name h4 a:before {
+    background-image: url('MKX-Logo-Icon.jpg');
+    background-repeat: no-repeat;
+    content: "[]";
+    display: inline-block;
+    height: 57px;
     position: relative;
+    width: 60px;
   }
 
   #register-button {
@@ -65,16 +97,6 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .top-bar .name h4 a:before {
-    background-image: url('MKX-Logo-Icon.jpg');
-    background-repeat: no-repeat;
-    content: "[]";
-    display: inline-block;
-    height: 57px;
-    position: relative;
-    width: 60px;
   }
 
   .hvr-bounce-in {
