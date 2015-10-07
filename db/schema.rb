@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151005190839) do
+ActiveRecord::Schema.define(version: 20151007160528) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,11 +19,53 @@ ActiveRecord::Schema.define(version: 20151005190839) do
   create_table "characters", force: :cascade do |t|
     t.string   "name",        null: false
     t.string   "description", null: false
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
   add_index "characters", ["name"], name: "index_characters_on_name", unique: true, using: :btree
+
+  create_table "comment_votes", force: :cascade do |t|
+    t.integer  "upvote",     null: false
+    t.integer  "downvote",   null: false
+    t.integer  "review_id",  null: false
+    t.integer  "user_id",    null: false
+    t.integer  "comment_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "comments", force: :cascade do |t|
+    t.integer  "rating",     null: false
+    t.string   "body",       null: false
+    t.integer  "user_id"
+    t.integer  "move_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "frames", force: :cascade do |t|
+    t.string   "startup",      null: false
+    t.string   "active",       null: false
+    t.string   "recover",      null: false
+    t.string   "blockadv",     null: false
+    t.string   "hitadv",       null: false
+    t.string   "cancelwindow", null: false
+    t.integer  "move_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "move_votes", force: :cascade do |t|
+    t.integer  "upvote",     null: false
+    t.integer  "downvote",   null: false
+    t.integer  "review_id",  null: false
+    t.integer  "user_id",    null: false
+    t.integer  "move_id"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "moves", force: :cascade do |t|
     t.string   "name",           null: false
@@ -31,23 +73,37 @@ ActiveRecord::Schema.define(version: 20151005190839) do
     t.string   "type",           null: false
     t.string   "damage",         null: false
     t.integer  "character_id"
+    t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
+  add_index "moves", ["name"], name: "index_moves_on_name", unique: true, using: :btree
+
+  create_table "user_characters", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "character_id"
+  end
+
+  create_table "user_moves", force: :cascade do |t|
+    t.integer "user_id"
+    t.integer "move_id"
+  end
+
   create_table "users", force: :cascade do |t|
-    t.string   "email",                  default: "", null: false
-    t.string   "encrypted_password",     default: "", null: false
+    t.string   "email",                  default: "",    null: false
+    t.string   "encrypted_password",     default: "",    null: false
     t.string   "reset_password_token"
     t.datetime "reset_password_sent_at"
     t.datetime "remember_created_at"
-    t.integer  "sign_in_count",          default: 0,  null: false
+    t.integer  "sign_in_count",          default: 0,     null: false
     t.datetime "current_sign_in_at"
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
-    t.datetime "created_at",                          null: false
-    t.datetime "updated_at",                          null: false
+    t.datetime "created_at",                             null: false
+    t.datetime "updated_at",                             null: false
+    t.boolean  "admin",                  default: false
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree

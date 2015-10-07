@@ -1,15 +1,12 @@
-class Move < ActiveRecord::Base
-  belongs_to :character
-  has_many :comments
-  has_many :move_votes
-  has_many :users,
-    through: :user_moves
-  has_many :user_moves
+class Comment < ActiveRecord::Base
+  belongs_to :user
+  belongs_to :move
+  has_many :comment_votes
 
-  validates :name, presence: true
-  validates :button_command, presence: true
-  validates :type, presence: true
-  validates :damage, presence: true
+  validates :rating, presence: true, numericality: { only_integer: true }
+  validates :rating, inclusion: { in: 1..5, message: " must be between 1 to 5" }
+  validates :body, presence: true
+  validates :body, length: { minimum: 5 }
 
   def upvotes_score
     upvotes = votes.where(upvote: 1).count
