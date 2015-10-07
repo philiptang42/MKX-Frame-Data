@@ -12,4 +12,13 @@ FactoryGirl.define do
     description "This is a character in Mortal Kombat X"
   end
 
+  factory :move do
+    sequence(:name) { |n| "move#{n}" }
+    sequence(:button_command) { |n| "#{n}"}
+    sequence(:type) { |n| "#{n}" }
+    sequence(:damage) { |n| "#{n}%"}
+
+    character
+  end
+
 end

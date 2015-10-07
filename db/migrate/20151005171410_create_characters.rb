@@ -3,8 +3,10 @@ class CreateCharacters < ActiveRecord::Migration
     create_table :characters do |t|
       t.string :name, null: false
       t.string :description, null: false
-      t.index :name, unique: true
 
+      t.belongs_to :user
+
+      t.index :name, unique: true
       t.timestamps
     end
   end

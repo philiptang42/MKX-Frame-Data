@@ -5,8 +5,11 @@ class CreateMoves < ActiveRecord::Migration
       t.string :button_command, null: false
       t.string :type, null: false
       t.string :damage, null: false
+      
       t.belongs_to :character
+      t.belongs_to :user
 
+      t.index :name, unique: true
       t.timestamps
     end
   end
