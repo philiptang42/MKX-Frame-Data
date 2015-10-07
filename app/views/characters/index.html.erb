@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<body>
+<body class="the-index-page">
   <br>
   <br>
   <div class = "row index_row">
@@ -13,8 +13,7 @@
               <div class="panel">
                   <div class="index-name"><h3><%= character.name %></h3></div>
                   <div style="display:flex;justify-content:center;align-items:center;">
-                    <div><%= image_tag "character_icons/#{character.name}-Icon.png",
-                     :class =>"hvr-bounce-in" %></div>
+                    <div><%= link_to (image_tag("character_icons/#{character.name}-Icon.png")), character_path(character), :class =>"hvr-bounce-in" %></div>
                   </div>
               </div>
             </li>

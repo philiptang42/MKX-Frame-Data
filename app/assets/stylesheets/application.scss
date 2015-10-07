@@ -20,11 +20,20 @@
     src: font-url('MKXfont.ttf');
   }
 
-  body {
+  .the-show-page {
+    background-image: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: black;
+    position: relative;
+  }
+
+  .the-index-page {
     background-image: no-repeat;
     background-image: url('sky-temple.jpg');
     background-attachment: fixed;
     background-size: cover;
+    background-color: black;
     position: relative;
   }
 
