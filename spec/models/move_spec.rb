@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe Move do
   describe "table" do
+    it { should have_db_column(:db_name).of_type(:string) }
     it { should have_db_column(:name).of_type(:string) }
     it { should have_db_column(:type).of_type(:string) }
     it { should have_db_column(:button_command).of_type(:string) }
@@ -18,6 +19,7 @@ describe Move do
   end
 
   describe "validations" do
+    it { should validate_presence_of(:db_name) }
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:type) }
     it { should validate_presence_of(:button_command) }

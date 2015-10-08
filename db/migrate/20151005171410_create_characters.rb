@@ -1,6 +1,7 @@
 class CreateCharacters < ActiveRecord::Migration
   def change
     create_table :characters do |t|
+      t.string :db_name, null: false
       t.string :name, null: false
       t.string :description, null: false
 

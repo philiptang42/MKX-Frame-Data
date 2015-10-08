@@ -2,6 +2,7 @@ require "rails_helper"
 
 describe Character do
   describe "table" do
+    it { should have_db_column(:db_name).of_type(:string) }
     it { should have_db_column(:name).of_type(:string) }
     it { should have_db_column(:description).of_type(:string) }
     it { should have_db_column(:created_at).of_type(:datetime) }
@@ -14,6 +15,7 @@ describe Character do
   end
 
   describe "validations" do
+    it { should validate_presence_of(:db_name) }
     it { should validate_presence_of(:name) }
     it { should validate_presence_of(:description) }
 

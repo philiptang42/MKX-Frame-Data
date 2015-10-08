@@ -6,6 +6,7 @@ class Move < ActiveRecord::Base
     through: :user_moves
   has_many :user_moves
 
+  validates :db_name, presence: true
   validates :name, presence: true
   validates :button_command, presence: true
   validates :type, presence: true
