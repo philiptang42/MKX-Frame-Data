@@ -52,6 +52,7 @@ end
 
 gem 'rspec-rails', group: [:development, :test]
 gem 'capybara', group: [:development, :test]
+gem 'pry-rails', :group => :development
 gem 'launchy', group: [:development, :test]
 gem 'factory_girl', group: [:development, :test]
 gem 'factory_girl_rails', group: [:development, :test]

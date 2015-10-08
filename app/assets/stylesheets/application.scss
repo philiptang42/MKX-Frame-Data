@@ -15,7 +15,6 @@
  *= require foundation_and_overrides
 
  */
-
  .the-index-page {
    background-image: url('sky-temple.jpg');
    background-image: no-repeat;
@@ -257,7 +256,6 @@
     position: relative;
   }
 
-
 //the default background image
   .the-show-page {
     background-image: no-repeat;
@@ -267,6 +265,7 @@
     position: relative;
   }
 
+//top-left logo
   .top-bar .name h4 a:before {
     background-image: url('MKX-Logo-Icon.jpg');
     background-repeat: no-repeat;
@@ -276,6 +275,18 @@
     position: relative;
     width: 60px;
   }
+
+//panel elements
+  .field-log-in {
+    color: #ead61c;
+  }
+
+  .panel-reg {
+    background-color: rgba(0,0,0,0.25);
+    margin-top: 20px;
+    margin-left: 8px;
+    margin-right: 8px;
+    }
 
   .panelz {
     background-color: rgba(0,0,0,0.3);
@@ -313,7 +324,7 @@
     margin-right: 1px;
   }
 
-
+//button effects
   .hvr-bounce-in {
     display: inline-block;
     vertical-align: middle;

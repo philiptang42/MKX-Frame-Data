@@ -10,7 +10,12 @@
         <% @characters.each do |character| %>
             <li>
               <div class="panel">
-                  <div class="index-name"><h3><%= character.name %></h3></div>
+                  <div class="index-name">
+                    <h3>
+                      <%= character.name %>
+                    </h3>
+                  </div>
+
                   <div style="display:flex;justify-content:center;align-items:center;">
                     <div><%= link_to (image_tag("character_icons/#{character.name}-Icon.png")), character_path(character), :class =>"hvr-bounce-in" %></div>
                   </div>
@@ -18,7 +23,5 @@
             </li>
         <% end %>
       </ul>
-
-
     </div>
   </div>
