@@ -8,11 +8,13 @@ FactoryGirl.define do
   end
 
   factory :character do
+    sequence(:db_name) {|n| "move#{n}" }
     sequence(:name) { |n| "character#{n}" }
-    description "This is a character in Mortal Kombat X"
+    description { |n| "This is a character in Mortal Kombat X" }
   end
 
   factory :move do
+    sequence(:db_name) {|n| "move#{n}" }
     sequence(:name) { |n| "move#{n}" }
     sequence(:button_command) { |n| "#{n}"}
     sequence(:type) { |n| "#{n}" }

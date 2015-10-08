@@ -17,6 +17,7 @@ ActiveRecord::Schema.define(version: 20151007160528) do
   enable_extension "plpgsql"
 
   create_table "characters", force: :cascade do |t|
+    t.string   "db_name",     null: false
     t.string   "name",        null: false
     t.string   "description", null: false
     t.integer  "user_id"
@@ -68,6 +69,7 @@ ActiveRecord::Schema.define(version: 20151007160528) do
   end
 
   create_table "moves", force: :cascade do |t|
+    t.string   "db_name",        null: false
     t.string   "name",           null: false
     t.string   "button_command", null: false
     t.string   "type",           null: false
