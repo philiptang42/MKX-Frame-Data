@@ -125,7 +125,7 @@ $black       : #000000;
 
 // We use these to control various global styles
 // $body-bg: $white;
-// $body-font-color: $jet;
+$body-font-color: #ead61c;
 $body-font-family: MKXfont;
 // $body-font-weight: $font-weight-normal;
 // $body-font-style: normal;
@@ -213,7 +213,7 @@ $body-font-family: MKXfont;
 $header-font-family: "MKXfont";
 // $header-font-weight: $font-weight-normal;
 $header-font-style: normal;
-// $header-font-color: $jet;
+$header-font-color: #ead61c;
 $header-line-height: 1.4;
 $header-top-margin: .2rem;
 $header-bottom-margin: .5rem;
@@ -225,7 +225,7 @@ $header-text-rendering: optimizeLegibility;
 // $h3-font-size: rem-calc(27);
 $h4-font-size: rem-calc(100);
 // $h5-font-size: rem-calc(18);
-// $h6-font-size: 1rem;
+$h6-font-size: rem-calc(9);
 
 
 // We use these to control header size reduction on small screens
@@ -436,10 +436,10 @@ $h4-font-reduction: rem-calc(5);
 // 05. Buttons
 // - - - - - - - - - - - - - - - - - - - - - - - - -
 
-// $include-html-button-classes: $include-html-classes;
+$include-html-button-classes: $include-html-classes;
 
 // We use these to build padding for buttons.
-// $button-tny: rem-calc(10);
+$button-tny: rem-calc(8);
 // $button-sml: rem-calc(14);
 // $button-med: rem-calc(16);
 // $button-lrg: rem-calc(18);
@@ -450,8 +450,8 @@ $h4-font-reduction: rem-calc(5);
 
 // We use these to control button text styles.
 // $button-font-family: $body-font-family;
-// $button-font-color: $white;
-// $button-font-color-alt: $oil;
+$button-font-color: $white;
+$button-font-color-alt: $oil;
 // $button-font-tny: rem-calc(11);
 // $button-font-sml: rem-calc(13);
 // $button-font-med: rem-calc(16);
@@ -1487,3 +1487,104 @@ $topbar-divider-border-top: solid 1px scale-color($topbar-bg-color, $lightness: 
 // $include-legacy-visibility-classes: true;
 
 @import 'foundation';
+
+//
+// @variables
+//
+$include-html-label-classes: $include-html-classes !default;
+
+// We use these to style the labels
+$label-padding: rem-calc(4 8 4) !default;
+$label-radius: $global-radius !default;
+
+// We use these to style the label text
+$label-font-sizing: rem-calc(11) !default;
+$label-font-weight: $font-weight-normal !default;
+$label-font-color: yellow;
+$label-font-color-alt: $white !default;
+$label-font-family: $body-font-family !default;
+
+//
+// @mixins
+//
+// We use this mixin to create a default label base.
+@mixin label-base {
+  display: inline-block;
+  font-family: $label-font-family;
+  font-weight: $label-font-weight;
+  line-height: 1;
+  margin-bottom: auto;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+// @mixins
+//
+// We use this mixin to add label size styles.
+// $padding - Used to determine label padding. Default: $label-padding || rem-calc(4 8 4) !default
+// $text-size - Used to determine label text-size. Default: $text-size found in settings
+@mixin label-size($padding:$label-padding, $text-size:$label-font-sizing) {
+  @if $padding { padding: $padding; }
+  @if $text-size { font-size: $text-size; }
+}
+
+// @mixins
+//
+// We use this mixin to add label styles.
+// $bg - Default: $primary-color (found in settings file)
+// $radius - Default: false, Options: true, sets radius to $global-radius (found in settings file)
+@mixin label-style($bg:$primary-color, $radius:false) {
+
+  // We control which background color comes through
+  @if $bg {
+
+    // This find the lightness percentage of the background color.
+    $bg-lightness: lightness($bg);
+
+    background-color: $bg;
+
+    // We control the text color for you based on the background color.
+    @if $bg-lightness < 70% { color: $label-font-color-alt; }
+    @else { color: $label-font-color; }
+  }
+
+  // We use this to control the radius on labels.
+  @if $radius == true { @include radius($label-radius); }
+  @else if $radius { @include radius($radius); }
+
+}
+
+// @mixins
+//
+// We use this to add close buttons to alerts
+// $padding - Default: $label-padding,
+// $text-size - Default: $label-font-sizing,
+// $bg - Default: $primary-color(found in settings file)
+// $radius - Default: false, Options: true which sets radius to $global-radius (found in settings file)
+@mixin label($padding:$label-padding, $text-size:$label-font-sizing, $bg:$primary-color, $radius:false) {
+
+  @include label-base;
+  @include label-size($padding, $text-size);
+  @include label-style($bg, $radius);
+}
+
+@include exports("label") {
+  @if $include-html-label-classes {
+    .label {
+      @include label-base;
+      @include label-size;
+      @include label-style;
+
+      &.radius { @include label-style(false, true); }
+      &.round { @include label-style(false, $radius:1000px); }
+
+      &.alert     { @include label-style($alert-color); }
+      &.warning   { @include label-style($warning-color); }
+      &.success   { @include label-style($success-color); }
+      &.secondary { @include label-style($secondary-color); }
+      &.info      { @include label-style($info-color); }
+    }
+  }
+}
