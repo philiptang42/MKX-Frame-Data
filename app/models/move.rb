@@ -9,8 +9,10 @@ class Move < ActiveRecord::Base
   validates :db_name, presence: true
   validates :name, presence: true
   validates :button_command, presence: true
-  validates :type, presence: true
+  validates :move_type, presence: true
   validates :damage, presence: true
+  validates :character_id, presence: true
+
 
   def upvotes_score
     upvotes = votes.where(upvote: 1).count

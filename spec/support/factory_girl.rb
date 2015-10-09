@@ -17,7 +17,7 @@ FactoryGirl.define do
     sequence(:db_name) {|n| "move#{n}" }
     sequence(:name) { |n| "move#{n}" }
     sequence(:button_command) { |n| "#{n}"}
-    sequence(:type) { |n| "#{n}" }
+    sequence(:move_type) { |n| "#{n}" }
     sequence(:damage) { |n| "#{n}%"}
 
     character

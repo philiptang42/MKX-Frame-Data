@@ -72,7 +72,7 @@ ActiveRecord::Schema.define(version: 20151007160528) do
     t.string   "db_name",        null: false
     t.string   "name",           null: false
     t.string   "button_command", null: false
-    t.string   "type",           null: false
+    t.string   "move_type",      null: false
     t.string   "damage",         null: false
     t.integer  "character_id"
     t.integer  "user_id"
