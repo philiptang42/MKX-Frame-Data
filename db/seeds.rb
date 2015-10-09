@@ -34,9 +34,23 @@ characters = [
   ["Takeda", "Takeda", "Son of Kenshi, apprentice of Scorpion; a new breed of ninja."]
 ]
 
+# ▼ ▲ ◄ ►
+# ← → ↓ ↑
+
+moves = [
+  ["Spear", "Spear", "← → + 1", "High", "3%", 1],
+  ["Teleport", "Teleport", "↓ ← + 3", "High", "5%", 1],
+  ["(X-Ray) From Hell", "(X-Ray-From-Hell)", "L2 + R2", "Mid", "33.70%", 1]
+]
+
 characters.each do |character|
   name, db_name, description = character
   c = Character.find_or_create_by!(name: name, db_name: db_name, description: description)
+end
+
+moves.each do |move|
+  name, db_name, button_command, move_type, damage, character_id = move
+  m = Move.find_or_create_by!(name: name, db_name: db_name, button_command: button_command, move_type: move_type, damage: damage, character_id: character_id)
 end
 
 User.create(email: ENV['admin_email'], password: ENV['admin_pass'], admin: true)

@@ -6,10 +6,26 @@
   </div>
 </div>
 
+<div id="info">
+  <ul class = "small-block-grid-1 medium-block-grid-3 large-block-grid-5 panelz" >
+    <% @character.moves.each do |m| %>
+    <div style="display:flex;justify-content:left;align-items:center;">
+      <div class ="panel">
+    <h2><%= m.name %></h2>
+    <p><h3>Button Command:  <%= m.button_command %></h3></p>
+    <p><h3>Move Type:  <%= m.move_type %></h3></p>
+    <p><h3>Damage:  <%= m.damage  %></h3></p>
+      </div>
+    </div>
+    <% end %>
+  </ul>
+</div>
+
 
 <% if current_user %>
   <% if current_user.admin %>
-    <%= link_to "Delete character", @character, method: :delete, class: "button alert",
+    <%= link_to "Delete Character (Admin Only)", @character, method: :delete,
+     class: "button alert hvr-bounce-in",
      data: {confirm: "Fatality?"} %>
   <% end %>
 <% end %>

@@ -4,7 +4,7 @@ class CreateMoves < ActiveRecord::Migration
       t.string :db_name, null: false
       t.string :name, null: false
       t.string :button_command, null: false
-      t.string :type, null: false
+      t.string :move_type, null: false
       t.string :damage, null: false
 
       t.belongs_to :character

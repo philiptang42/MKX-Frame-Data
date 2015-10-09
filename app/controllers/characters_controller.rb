@@ -10,8 +10,8 @@ class CharactersController < ApplicationController
     # @move = Move.New
   end
 
-  def New
-    @character = Character.New
+  def new
+    @character = Character.new
   end
 
   def create
