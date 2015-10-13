@@ -16,7 +16,7 @@ characters = [
   ["Jax", "Jax", "Special Forces operative forced to come out of retirement."],
   ["Kung Lao", "Kung-Lao", "Resurrected martial arts master bearing a grudge against Raiden."],
   ["Shinnok", "Shinnok", "The fallen Elder God; traitor to his brethren."],
-  ["Kano", "Kano", "Merciless, dastardly leader of the Black Dragon."],
+  ["Kano", "Kano", "Merciless criminal and leader of the Black Dragon."],
   ["Johnny Cage", "Johnny-Cage", "World-renowned, A-list Hollywood actor and champion of Earthrealm."],
   ["D'Vorah", "D-Vorah", "A member of the insectoid Kytinn race who acts as Kotal Kahn's advisor."],
   ["Ermac", "Ermac", "A mass of souls possessing powerful telekinetic abilities. He is many; you are one."],
@@ -24,7 +24,7 @@ characters = [
   ["Ferra-Torr", "Ferra-Torr", "A dastardly pair of overwhelming brawn and mischeivous cunning."],
   ["Goro", "Goro", "Four-armed beast whose legacy includes winning 9 Mortal Kombat tournaments consecutively."],
   ["Jacqui Briggs", "Jacqui-Briggs", "Enlisted in the Special Forces against the wishes of her father, Jax."],
-  ["Kotal Kahn", "Kotal-Kahn", "Osh-tekk warrior who usurped the Outworld throne from Mileena to become Emperor."],
+  ["Kotal Kahn", "Kotal-Kahn", "Osh-tekk warrior who usurped the Outworld throne to become Emperor."],
   ["Kung Jin", "Kung-Jin", "Former thief, current White Lotus warrior specializing in bows and chakrams."],
   ["Liu Kang", "Liu-Kang", "Once a supreme defender of Earthrealm, now the Emperor of the Netherrealm."],
   ["Mileena", "Mileena", "Believing the Outworld throne to be hers by bloodright, she engages Kotal Kahn in civil war."],
@@ -125,20 +125,40 @@ moves = [
   ["Sand Slide", "Sand-Slide", "← → + 4", "Low", "10%", 14],
   ["Sand Gust", "Sand-Gust", "↓ ← + 4", "High", "8%", 14],
   ["Sand Trap", "Sand-Trap", "↓ ← → + 2", "Throw", "13%", 14],
-  ["(X-Ray) Trick Shot", "X-Ray-Trick-Shot", "L2 + R2", "Mid", "35%", 14]
+  ["(X-Ray) Trick Shot", "X-Ray-Trick-Shot", "L2 + R2", "Mid", "35%", 14],
   #Ferra Torr
-
+  ["Deep Stab", "Deep-Stab", "↓ ← → + 1", "Throw", "11%", 15],
+  ["Bowl Girl", "Bowl Girl", "← → + 1", "Low", "9%", 15],
+  ["Ferra Toss", "Ferra-Toss", "↓ ← + 2", "Overhead", "10%", 15],
+  ["Tuck 'n' Charge", "Tuck-n-Charge", "← → + 3", "Overhead", "9.50%", 15],
+  ["(X-Ray) Bone Crusher", "X-Ray-Bone-Crusher", "L2 + R2", "Overhead", "36.70%", 15],
   #Goro
+  ["Shokan Bolt", "Shokan-Bolt", "← → + 1", "High", "9%", 16],
+  ["Punch Walk", "Punch-Walk", "← → + 4", "Mid", "11.88%", 16],
+  ["Shokan Grab", "Shokan-Grab", "↓ ← → + 3", "Throw", "14%", 16],
+  ["Stomp", "Stomp", "↓ ↑", "Unblockable", "10%", 16],
+  ["(X-Ray) Spine Adjustment", "X-Ray-Spine-Adjustment", "L2 + R2", "Mid", "31.75%", 16],
   #Jacqui Briggs
+  ["Air Ground Smash", "Air-Ground-Smash", "↓ ↓ + 4", "Low", "9%", 17],
+  ["Forces Rush", "Forces-Rush", "← → + 1", "High", "9.60%", 17],
+  ["Bionic Dash", "Bionic-Dash", "← → + 2", "Mid", "6%", 17],
+  ["Gauntlet Strike", "Gauntlet-Strike", "← → + 4", "Mid", "15%", 17],
+  ["Tech Shield", "Tech-Shield", "↓ ← + 1", "Deflection", "N/A", 17],
+  ["(X-Ray Chest Kavity)", "X-Ray-Chest-Kavity", "L2 + R2", "Mid", "29%", 17],
   #Kotal Kahn
+  ["Blood Offering", "Blood-Offering", "→ ↓ ← + 4", "Temporary 50% Damage Increase", "10% (Self)", 18],
+  ["Sunstone", "Sunstone", "↓ → + 3", "Mid", "11%", 18],
+  ["God Ray", "God-Ray", "↓ → + 4", "Trap", "10%", 18],
+  ["Air Takedown", "Air-Takedown", "↓ → + 1", "Unblockable", "10%", 18],
+  ["(X-Ray) Sunburn", "X-Ray-Sunburn", "L2 + R2", "Mid", "33%", 18],
   #Kung Jin
+  
   #Liu Kang
   #Mileena
   #Quan Chi
   #Raiden
   #Reptile
   #Takeda
-
 ]
 
 frames = [
@@ -228,20 +248,40 @@ frames = [
   ["17", "14", "28", "-25", "27", "N/A", 70],
   ["19", "4", "25", "-1", "40", "N/A", 71],
   ["16", "2", "33", "-17", "20", "166", 72],
-  ["34", "4", "39", "-6", "15", "N/A", 73]
+  ["34", "4", "39", "-6", "15", "N/A", 73],
   #Ferra Torr
-
+  ["11", "5", "45", "-31", "9", "N/A", 74],
+  ["16", "20", "24", "-7", "6", "N/A", 75],
+  ["13", "22", "16", "-1", "-5", "N/A", 76],
+  ["15", "52", "44", "-8", "3", "N/A", 77],
+  ["21", "34", "24", "6", "-1", "N/A", 78],
   #Goro
+  ["23", "200", "-157", "-15", "-3", "N/A", 79],
+  ["12", "41", "31", "-5", "19", "N/A", 80],
+  ["8", "3", "47", "-14", "8", "N/A", 81],
+  ["51", "10", "46", "-28", "8", "N/A", 82],
+  ["30", "2", "4", "29", "20", "N/A", 83],
   #Jacqui Briggs
+  ["33", "5", "34", "0", "14", "N/A", 84],
+  ["12", "6", "42", "-27", "21", "N/A", 85],
+  ["25", "4", "33", "-19", "41", "N/A", 86],
+  ["21", "1", "47", "-30", "10", "N/A", 87],
+  ["11", "28", "3", "-41", "-41", "N/A", 88],
+  ["22", "2", "27", "7", "0", "N/A", 89],
   #Kotal Kahn
+  ["1", "0", "63", "-63", "-63", "N/A", 90],
+  ["42", "101", "-69", "5", "38", "N/A", 91],
+  ["19", "401", "-351", "-68", "-68", "N/A", 92],
+  ["8", "4", "20", "-6", "-2", "N/A", 93],
+  ["22", "4", "40", "-5", "8", "N/A", 94],
   #Kung Jin
+
   #Liu Kang
   #Mileena
   #Quan Chi
   #Raiden
   #Reptile
   #Takeda
-
 ]
 
 characters.each do |character|
