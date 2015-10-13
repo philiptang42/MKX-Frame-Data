@@ -82,7 +82,25 @@ moves = [
   ["Gotcha Grab", "Gotcha-Grab", "↓ ← + 1", "High", "8%", 7],
   ["(X-Ray) Bring It", "(X-Ray)-Bring-It", "L2 + R2", "Overhead", "32%", 7],
   #Kung Lao
-  ["Spin", "Spin", "↓ → + 1", "Mid", "5%", 8]
+  ["Spin", "Spin", "↓ → + 1", "Mid", "5%", 8],
+  ["Dive Kick", "Dive-Kick", "↓ + 4", "Mid", "5%", 8],
+  ["Teleport - Hammer Punch", "Teleport-Hammer-Punch", "↓ ↑ + 2", "Overhead", "6%", 8],
+  ["Hat Toss", "Hat-Toss", "← → + 2", "Mid", "7%", 8],
+  ["(X-Ray) Head Trauma", "(X-Ray)-Head-Trauma", "L2 + R2", "Mid", "34.26%", 8],
+  #Shinnok
+  ["Charging Shoulder", "Charging-Shoulder", "← → + 3", "Mid", "8.50%", 9],
+  ["Hell Sparks", "Hell-Sparks", "↓ ← + 2", "Mid", "10.01%", 9],
+  ["Amulet Strike", "Amulet-Strike", "← → + 1", "High", "9%", 9],
+  ["(X-Ray) The Devil's Hand", "(X-Ray)-The-Devils-Hand", "L2 + R2", "Mid", "35%", 9],
+  #Kano
+  ["Air Ball", "Air-Ball", "← → + 3", "Mid", "8.75%", 10],
+  ["Kano Ball", "Kano-Ball", "← → + 3", "Mid", "10.60%", 10],
+  ["Up Ball", "Up-Ball", "↓ ← + 2", "Mid", "9.60%", 10],
+  ["Blade Throw", "Blade-Throw", "↓ → + 2", "High", "6%", 10],
+  ["(X-Ray) Lacerator", "(X-Ray)-Lacerator", "L2 + R2", "Mid", "32%", 10],
+  #Johnny Cage
+  ["High Forceball", "High-Forceball", "↓ ← + 2", "Mid", "8%", 11]
+  
 ]
 
 frames = [
@@ -129,7 +147,25 @@ frames = [
   ["9", "3", "18", "-4", "8", "N/A", 34],
   ["20", "3", "27", "4", "4", "N/A", 35],
   #Kung Lao
-  ["7", "34", "38", "-25", "70", "N/A", 36]
+  ["7", "34", "38", "-25", "70", "N/A", 36],
+  ["6", "16", "17", "-38", "51", "N/A", 37],
+  ["11", "5", "37", "-25", "35", "N/A", 38],
+  ["15", "301", "-263", "-25", "2", "N/A", 39],
+  ["15", "22", "38", "-4", "6", "N/A", 40],
+  #Shinnok
+  ["12", "20", "24", "-15", "36", "N/A", 41],
+  ["13", "46", "9", "-27", "20", "57", 42],
+  ["16", "5", "33", "-10", "2", "N/A", 43],
+  ["26", "3", "31", "2", "13", "N/A", 44],
+  #Kano
+  ["2", "30", "47", "-46", "5", "19", 45],
+  ["13", "32", "29", "-20", "33", "N/A", 46],
+  ["6", "19", "37", "-27", "28", "N/A", 47],
+  ["16", "101", "-76", "-7", "7", "N/A", 48],
+  ["21", "3", "41", "-8", "4", "N/A", 49],
+  #Johnny Cage
+  ["19", "601", "-572", "-11", "11", "N/A", 50]
+
 ]
 
 characters.each do |character|
