@@ -10,7 +10,7 @@ class CreateMoves < ActiveRecord::Migration
       t.belongs_to :character
       t.belongs_to :user
 
-      t.index :name, unique: true
+      t.index :name
       t.timestamps
     end
   end
