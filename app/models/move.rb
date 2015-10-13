@@ -5,6 +5,7 @@ class Move < ActiveRecord::Base
   has_many :users,
     through: :user_moves
   has_many :user_moves
+  has_many :frames
 
   validates :db_name, presence: true
   validates :name, presence: true

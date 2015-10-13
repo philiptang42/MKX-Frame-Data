@@ -1,25 +1,61 @@
 <% provide(:background, @character.db_name) %>
+<head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 <br>
-<div style="display:flex;justify-content:center;align-items:center;">
-  <div class="panel">
-    <h1> <%=@character.name %> </h1>
+  <div style="display:flex;justify-content:center;align-items:center;">
+    <div class="panelzz">
+    <div class="panel">
+      <h1> <%=@character.name %> </h1>
+          <%=@character.description %>
+    </div>
   </div>
 </div>
 
-<div id="info">
-  <ul class = "small-block-grid-1 medium-block-grid-3 large-block-grid-5 panelz" >
-    <% @character.moves.each do |m| %>
-    <div style="display:flex;justify-content:left;align-items:center;">
-      <div class ="panel">
-    <h2><%= m.name %></h2>
-    <p><h3>Button Command:  <%= m.button_command %></h3></p>
-    <p><h3>Move Type:  <%= m.move_type %></h3></p>
-    <p><h3>Damage:  <%= m.damage  %></h3></p>
-      </div>
+<div class="move-properties">
+  <% @character.moves.each do |m| %>
+  <div class="columns medium-3 small-12">
+    <div class="row">
+      <table class="panelzz" style="margin-top: 4.5em">
+        <tr>
+          <td><h3 class="text-center"><%= m.name %>:</h3></td>
+          <td><h3 class="text-center"><%= m.button_command %></h3></td>
+        </tr>
+        <tr>
+          <td><h3 class="text-center">Move Type: <%= m.move_type %></h3></td>
+          <td><h3 class="text-center">Damage: <%= m.damage  %></h3></td>
+        </tr>
+      </table>
     </div>
+  </div>
+
+
+    <% m.frames.each do |f| %>
+      <div style="columns medium-3 small-12">
+        <div class="row">
+          <table class="panelzz">
+            <tr>
+              <td><p><h3 class="text-center">Startup: <%= f.startup %></h3></p></td>
+              <td><p><h3 class="text-center">Active:  <%= f.active %></h3></p></td>
+            </tr>
+            <tr>
+              <td><p><h3 class="text-center">Recover:  <%= f.recover %></h3></p></td>
+              <td><p><h3 class="text-center">Block Adv:  <%= f.blockadv  %></h3></p></td>
+            </tr>
+            <tr>
+              <td><p><h3 class="text-center">Hit Adv:  <%= f.hitadv  %></h3></p></td>
+              <td><p><h3 class="text-center">Cancel Window:  <%= f.cancelwindow  %></h3></p></td>
+            </tr>
+          </table>
+        </div>
+      </div>
+
+
     <% end %>
-  </ul>
+  <% end %>
+
+
 </div>
+
+
 
 
 <% if current_user %>
