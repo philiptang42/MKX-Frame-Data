@@ -29,7 +29,7 @@ characters = [
   ["Liu Kang", "Liu-Kang", "Once a supreme defender of Earthrealm, now the Emperor of the Netherrealm."],
   ["Mileena", "Mileena", "Believing the Outworld throne to be hers by bloodright, she engages Kotal Kahn in civil war."],
   ["Quan Chi", "Quan-Chi", "Relentless sorcerer intent on reviving the fallen Elder God Shinnok."],
-  ["Raiden", "Raiden", "Elder God who defends Earthrealm and rallies its defenders against its enemies."],
+  ["Raiden", "Raiden", "The God of Thunder and defender of Earthrealm."],
   ["Reptile", "Reptile", "In lieu of Shao Kahn's death, the Zatarran now serves Kotal Kahn."],
   ["Takeda", "Takeda", "Son of Kenshi, apprentice of Scorpion; a new breed of ninja."]
 ]
@@ -116,7 +116,7 @@ moves = [
   ["Soul Burst", "Soul-Burst", "↓ ← + 2", "Mid", "5%", 13],
   ["Air Soul Burst", "Air-Soul-Burst", "↓ ← + 2", "Overhead", "5%", 13],
   ["Force Lift", "Force-Lift", "↓ ← + 2", "Mid", "4.25%", 13],
-  ["Teleport", "Teleport", "↓ ← + 4", "Mid", "5%", 13],
+  ["Teleport", "Teleport-Ermac", "↓ ← + 4", "Mid", "5%", 13],
   ["Hover - Ground Slam", "Hover-Ground-Slam", "↓ ↓ ↑ + 3", "Low", "8%", 13],
   ["(X-Ray) We Are Many", "X-Ray-We-Are-Many", "L2 + R2", "Mid", "29%", 13],
   #Erron Black
@@ -180,11 +180,29 @@ moves = [
   ["Sky Drop", "Sky-Drop", "↓ ← + 4", "Overhead", "9%", 22],
   ["Air Sky Drop", "Air-Sky-Drop", "↓ ← + 4", "Overhead", "9%", 22],
   ["Ground Burst", "Ground-Burst", "↓ ← + 1", "Mid", "8%", 22],
-  ["(X-Ray) Skull Krusher", "X-Ray-Skull-Krusher", "L2 + R2", "High", "32%", 22]
+  ["(X-Ray) Skull Krusher", "X-Ray-Skull-Krusher", "L2 + R2", "High", "32%", 22],
   #Raiden
-
+  ["Electric Fly", "Electric-Fly", "← → + 3", "Mid", "9%", 23],
+  ["Air Electric Fly", "Air-Electric-Fly", "← → + 3", "Mid", "9%", 23],
+  ["Lightning", "Lightning", "↓ ← + 1", "High", "7%", 23],
+  ["Vicinity Blast", "Vicinity-Blast", "↓ ← + 2", "Unblockable", "5.40%", 23],
+  ["Electrocute", "Electrocute", "↓ → + 2", "High", "9%", 23],
+  ["Rising Thunder", "Rising-Thunder", "↓ ← + 3", "Mid", "7%", 23],
+  ["(X-Ray) Shock Therapy", "X-Ray-Shock-Therapy", "L2 + R2", "Mid", "30.95%", 23],
   #Reptile
+  ["Forceball", "Forceball", "↓ → + 3", "Mid", "5%", 24],
+  ["Slide", "Slide", "← → + 4", "Low", "8%", 24],
+  ["Acid Spit", "Acid-Spit", "↓ → + 3", "High", "5%", 24],
+  ["Klaw Pounce", "Klaw-Pounce", "↓ ← + 4", "Overhead", "7%", 24],
+  ["Klaw Swipe", "Klaw-Swipe", "↓ ← + 2", "Mid", "7%", 24],
+  ["Repitilian Dash", "Repitilian-Dash", "← → + 2", "Mid", "8.65%", 24],
+  ["(X-Ray) Reptile Disfunction", "X-Ray-Reptile-Disfunction", "L2 + R2", "Mid", "31%", 24],
   #Takeda
+  ["Kunai", "Kunai", "↓ ← + 1", "Low", "7%", 25],
+  ["Tornado Strike", "Tornado-Strike", "← → + 4", "Overhead", "10%", 25],
+  ["Air Tornado Strike", "Air-Tornado-Strike", "← → + 4", "Overhead", "10%", 25],
+  ["Fist Flurry", "Fist-Flurry", "← → + 2", "Mid", "10.18%", 25],
+  ["(X-Ray) Air Whiplash", "X-Ray-Air-Whiplash", "L2 + R2", "Overhead", "33%", 25]
 ]
 
 frames = [
@@ -329,10 +347,29 @@ frames = [
   ["38", "3", "38", "-18", "11", "N/A", 117],
   ["28", "3", "38", "-18", "11", "N/A", 118],
   ["17", "6", "34", "-12", "11", "29", 119],
-  ["22", "200", "-139", "-25", "5", "N/A", 120]
+  ["22", "200", "-139", "-25", "5", "N/A", 120],
   #Raiden
+  ["14", "32", "47", "-27", "27", "55", 121],
+  ["6", "32", "60", "-39", "27", "47", 122],
+  ["25", "101", "-70", "-13", "9", "N/A", 123],
+  ["15", "19", "26", "-17", "10", "N/A", 124],
+  ["12", "7", "25", "-7", "24", "N/A", 125],
+  ["15", "13", "50", "-35", "1", "N/A", 126],
+  ["28", "17", "31", "-12", "10", "N/A", 127],
   #Reptile
+  ["33", "601", "-564", "-19", "64", "N/A", 128],
+  ["9", "12", "19", "-22", "36", "N/A", 129],
+  ["17", "199", "-165", "-16", "6", "N/A", 130],
+  ["24", "8", "46", "-17", "21", "N/A", 131],
+  ["23", "4", "30", "-11", "43", "N/A", 132],
+  ["8", "8", "10", "-18", "35", "N/A", 133],
+  ["18", "8", "15", "8", "57", "N/A", 134],
   #Takeda
+  ["31", "4", "12", "2", "24", "N/A", 135],
+  ["37", "3", "46", "-21", "31", "N/A", 136],
+  ["28", "3", "46", "-21", "31", "N/A", 137],
+  ["23", "5", "43", "-30", "24", "N/A", 138],
+  ["21", "3", "49", "-15", "0", "N/A", 139]
 ]
 
 characters.each do |character|
