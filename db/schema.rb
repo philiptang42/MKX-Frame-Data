@@ -80,7 +80,7 @@ ActiveRecord::Schema.define(version: 20151007160528) do
     t.datetime "updated_at"
   end
 
-  add_index "moves", ["name"], name: "index_moves_on_name", unique: true, using: :btree
+  add_index "moves", ["name"], name: "index_moves_on_name", using: :btree
 
   create_table "user_characters", force: :cascade do |t|
     t.integer "user_id"

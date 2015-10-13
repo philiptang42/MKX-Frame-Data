@@ -44,35 +44,35 @@ moves = [
   ["Teleport", "Teleport", "↓ ← + 3", "High", "5%", 1],
   ["Air Teleport", "Air-Teleport", "↓ ← + 3", "Mid", "5%", 1],
   ["Takedown", "Takedown", "← → + 4", "Low", "11%", 1],
-  ["(X-Ray) From Hell", "(X-Ray)-From-Hell", "L2 + R2", "Mid", "33.70%", 1],
+  ["(X-Ray) From Hell", "X-Ray-From-Hell", "L2 + R2", "Mid", "33.70%", 1],
   # Subzero
   ["Ice Burst", "Ice-Burst", "↓ ← + 1", "Mid", "9%", 2],
   ["Ice Ball", "Ice-Ball", "↓ → + 2", "High", "0%", 2],
   ["Slide", "Slide", "← → + 4", "Low", "8%", 2],
-  ["(X-Ray) Deep Freeze", "(X-Ray)-Deep-Freeze", "L2 + R2", "High", "31%", 2],
+  ["(X-Ray) Deep Freeze", "X-Ray-Deep-Freeze", "L2 + R2", "High", "31%", 2],
   # Cassie Cage
   ["Single Shot", "Single-Shot", "← → + 1", "High", "7%", 3],
   ["Glow Kick", "Glow-Kick", "← → + 4", "Mid", "8%", 3],
   ["Getaway Flip", "Getaway-Flip", "↓ ← + 2", "Mid", "6%", 3],
-  ["(X-Ray) Testi-kill", "(X-Ray)-Testi-kill", "L2 + R2", "Mid", "35%", 3],
+  ["(X-Ray) Testi-kill", "X-Ray-Testi-kill", "L2 + R2", "Mid", "35%", 3],
   # Kitana
   ["Rising Fan", "Rising-Fan", "↓ ← + 2", "Mid", "7.40%", 4],
   ["Throat Slice", "Throat-Slice", "← → + 3", "Mid", "10%", 4],
   ["Fan Throw", "Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Air Fan Throw", "Air-Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Upraise", "Upraise", "↓ ← + 1", "Mid", "0%", 4],
-  ["(X-Ray) Slice and Dice", "(X-Ray)-Slice-and-Dice", "L2 + R2", "Overhead", "34.55%", 4],
+  ["(X-Ray) Slice and Dice", "X-Ray-Slice-and-Dice", "L2 + R2", "Overhead", "34.55%", 4],
   # Kenshi
   ["Rising Sword", "Rising-Sword", "↓ ← + 1", "Mid", "8%", 5],
   ["Spinning Blade", "Spinning-Blade", "↓ → + 1", "Overhead", "7.80%", 5],
   ["Blade Reflect", "Blade-Reflect", "↓ ← + 2", "Deflection", "0%", 5],
-  ["(X-Ray) Way of the Blade", "(X-Ray)-Way-of-the-Blade", "L2 + R2", "Mid", "32%", 5],
+  ["(X-Ray) Way of the Blade", "X-Ray-Way-of-the-Blade", "L2 + R2", "Mid", "32%", 5],
   #Sonya Blade
   ["Air Drop", "Air-Drop", "↓ + 4", "Mid", "5%", 6],
   ["Energy Blast", "Energy-Blast", "← → + 2", "High", "5%", 6],
   ["Arc Kick", "Arc-Kick", "↓ ← + 4", "Mid", "7%", 6],
   ["Leg Grab", "Leg-Grab", "← → + 4", "Mid", "10%", 6],
-  ["(X-Ray) Special Forces", "(X-Ray)-Special-Forces", "L2 + R2", "Counter", "32%", 6],
+  ["(X-Ray) Special Forces", "X-Ray-Special-Forces", "L2 + R2", "Counter", "32%", 6],
   #Jax
   ["Energy Wave", "Energy-Wave", "↓ ← + 2", "High", "7%", 7],
   ["Ground Pound", "Ground-Pound", "↓ ↓ + 4", "Unblockable", "6%", 7],
@@ -80,27 +80,65 @@ moves = [
   ["Downward Dash Punch", "Downward-Dash-Punch", "← → + 2 ↓", "Overhead", "10%", 7],
   ["Major Pain", "Major-Pain", "← → + 4", "Mid", "10%", 7],
   ["Gotcha Grab", "Gotcha-Grab", "↓ ← + 1", "High", "8%", 7],
-  ["(X-Ray) Bring It", "(X-Ray)-Bring-It", "L2 + R2", "Overhead", "32%", 7],
+  ["(X-Ray) Bring It", "X-Ray-Bring-It", "L2 + R2", "Overhead", "32%", 7],
   #Kung Lao
   ["Spin", "Spin", "↓ → + 1", "Mid", "5%", 8],
   ["Dive Kick", "Dive-Kick", "↓ + 4", "Mid", "5%", 8],
   ["Teleport - Hammer Punch", "Teleport-Hammer-Punch", "↓ ↑ + 2", "Overhead", "6%", 8],
   ["Hat Toss", "Hat-Toss", "← → + 2", "Mid", "7%", 8],
-  ["(X-Ray) Head Trauma", "(X-Ray)-Head-Trauma", "L2 + R2", "Mid", "34.26%", 8],
+  ["(X-Ray) Head Trauma", "X-Ray-Head-Trauma", "L2 + R2", "Mid", "34.26%", 8],
   #Shinnok
   ["Charging Shoulder", "Charging-Shoulder", "← → + 3", "Mid", "8.50%", 9],
   ["Hell Sparks", "Hell-Sparks", "↓ ← + 2", "Mid", "10.01%", 9],
   ["Amulet Strike", "Amulet-Strike", "← → + 1", "High", "9%", 9],
-  ["(X-Ray) The Devil's Hand", "(X-Ray)-The-Devils-Hand", "L2 + R2", "Mid", "35%", 9],
+  ["(X-Ray) The Devil's Hand", "X-Ray-The-Devils-Hand", "L2 + R2", "Mid", "35%", 9],
   #Kano
   ["Air Ball", "Air-Ball", "← → + 3", "Mid", "8.75%", 10],
   ["Kano Ball", "Kano-Ball", "← → + 3", "Mid", "10.60%", 10],
   ["Up Ball", "Up-Ball", "↓ ← + 2", "Mid", "9.60%", 10],
   ["Blade Throw", "Blade-Throw", "↓ → + 2", "High", "6%", 10],
-  ["(X-Ray) Lacerator", "(X-Ray)-Lacerator", "L2 + R2", "Mid", "32%", 10],
+  ["(X-Ray) Lacerator", "X-Ray-Lacerator", "L2 + R2", "Mid", "32%", 10],
   #Johnny Cage
-  ["High Forceball", "High-Forceball", "↓ ← + 2", "Mid", "8%", 11]
-  
+  ["High Forceball", "High-Forceball", "↓ ← + 2", "Mid", "8%", 11],
+  ["Low Forceball", "Low-Forceball", "↓ → + 2", "Mid", "8%", 11],
+  ["Flip Kick", "Flip-Kick", "↓ ← + 4", "Mid", "8%", 11],
+  ["Nut Punch", "Nut-Punch", "← ↓ + 3", "Mid", "9%", 11],
+  ["Shadow Kick", "Shadow-Kick", "← → + 4", "High", "8%", 11],
+  ["(X-Ray) Kasting Kall", "X-Ray-Kasting-Kall", "L2 + R2", "Overhead", "33%", 11],
+  #D'Vorah
+  ["Bug Blast", "Bug-Blast", "↓ → + 1", "High", "7%", 12],
+  ["Spawning Puddle", "Spawning-Puddle", "↓ ← + 1", "Low", "8%", 12],
+  ["Forward Air Throw", "Forward-Air-Throw", "↓ + L1", "Unblockable", "11%", 12],
+  ["Backward Air Throw", "Backward-Air-Throw", "↓ + L1, ←", "Unblockable", "11%", 12],
+  ["Ovipositor Charge", "Ovipositor-Charge", "↓ ← + 4", "Mid", "5.70%", 12],
+  ["(X-Ray) Stick Around", "X-Ray-Stick-Around", "L2 + R2", "Mid", "33%", 12],
+  #Ermac
+  ["Soul Burst", "Soul-Burst", "↓ ← + 2", "Mid", "5%", 13],
+  ["Air Soul Burst", "Air-Soul-Burst", "↓ ← + 2", "Overhead", "5%", 13],
+  ["Force Lift", "Force-Lift", "↓ ← + 2", "Mid", "4.25%", 13],
+  ["Teleport", "Teleport", "↓ ← + 4", "Mid", "5%", 13],
+  ["Hover - Ground Slam", "Hover-Ground-Slam", "↓ ↓ ↑ + 3", "Low", "8%", 13],
+  ["(X-Ray) We Are Many", "X-Ray-We-Are-Many", "L2 + R2", "Mid", "29%", 13],
+  #Erron Black
+  ["Sand Grenade", "Sand-Grenade", "← → + 3", "Low", "9%", 14],
+  ["Caltrops", "Caltrops", "↓ ← + 3", "Trap", "7.50%", 14],
+  ["Sand Slide", "Sand-Slide", "← → + 4", "Low", "10%", 14],
+  ["Sand Gust", "Sand-Gust", "↓ ← + 4", "High", "8%", 14],
+  ["Sand Trap", "Sand-Trap", "↓ ← → + 2", "Throw", "13%", 14],
+  ["(X-Ray) Trick Shot", "X-Ray-Trick-Shot", "L2 + R2", "Mid", "35%", 14]
+  #Ferra Torr
+
+  #Goro
+  #Jacqui Briggs
+  #Kotal Kahn
+  #Kung Jin
+  #Liu Kang
+  #Mileena
+  #Quan Chi
+  #Raiden
+  #Reptile
+  #Takeda
+
 ]
 
 frames = [
@@ -164,7 +202,45 @@ frames = [
   ["16", "101", "-76", "-7", "7", "N/A", 48],
   ["21", "3", "41", "-8", "4", "N/A", 49],
   #Johnny Cage
-  ["19", "601", "-572", "-11", "11", "N/A", 50]
+  ["19", "601", "-572", "-11", "11", "N/A", 50],
+  ["19", "601", "-572", "-11", "11", "N/A", 51],
+  ["12", "5", "29", "-16", "27", "N/A", 52],
+  ["11", "4", "42", "-19", "22", "N/A", 53],
+  ["11", "16", "17", "-13", "30", "N/A", 54],
+  ["26", "3", "18", "15", "42", "N/A", 55],
+  #D'Vorah
+  ["28", "200", "-175", "-7", "15", "N/A", 56],
+  ["47", "6", "0", "22", "36", "N/A", 57],
+  ["8", "3", "11", "0", "7", "N/A", 58],
+  ["8", "3", "11", "0", "7", "N/A", 59],
+  ["11", "23", "30", "-15", "43", "N/A", 60],
+  ["5", "17", "30", "-15", "6", "N/A", 61],
+  #Ermac
+  ["11", "6", "34", "-14", "3", "N/A", 62],
+  ["10", "2", "35", "-9", "3", "N/A", 63],
+  ["13", "2", "66", "-51", "20", "N/A", 64],
+  ["25", "3", "26", "-17", "35", "N/A", 65],
+  ["20", "11", "27", "-1", "2", "N/A", 66],
+  ["13", "5", "44", "-12", "-1", "N/A", 67],
+  #Erron Black
+  ["23", "200", "-166", "-16", "21", "N/A", 68],
+  ["40", "301", "-294", "-46", "-46", "N/A", 69],
+  ["17", "14", "28", "-25", "27", "N/A", 70],
+  ["19", "4", "25", "-1", "40", "N/A", 71],
+  ["16", "2", "33", "-17", "20", "166", 72],
+  ["34", "4", "39", "-6", "15", "N/A", 73]
+  #Ferra Torr
+
+  #Goro
+  #Jacqui Briggs
+  #Kotal Kahn
+  #Kung Jin
+  #Liu Kang
+  #Mileena
+  #Quan Chi
+  #Raiden
+  #Reptile
+  #Takeda
 
 ]
 
