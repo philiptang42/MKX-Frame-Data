@@ -61,7 +61,7 @@ moves = [
   ["Fan Throw", "Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Air Fan Throw", "Air-Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Upraise", "Upraise", "↓ ← + 1", "Mid", "0%", 4],
-  ["(X-Ray) Slice and Dice", "X-Ray-Slice-and-Dice", "L2 + R2", "Overhead", "34.55%", 4],
+  ["(X-Ray) Slice And Dice", "X-Ray-Slice-And-Dice", "L2 + R2", "Overhead", "34.55%", 4],
   # Kenshi
   ["Rising Sword", "Rising-Sword", "↓ ← + 1", "Mid", "8%", 5],
   ["Spinning Blade", "Spinning-Blade", "↓ → + 1", "Overhead", "7.80%", 5],
@@ -195,7 +195,7 @@ moves = [
   ["Acid Spit", "Acid-Spit", "↓ → + 3", "High", "5%", 24],
   ["Klaw Pounce", "Klaw-Pounce", "↓ ← + 4", "Overhead", "7%", 24],
   ["Klaw Swipe", "Klaw-Swipe", "↓ ← + 2", "Mid", "7%", 24],
-  ["Repitilian Dash", "Repitilian-Dash", "← → + 2", "Mid", "8.65%", 24],
+  ["Reptilian Dash", "Reptilian-Dash", "← → + 2", "Mid", "8.65%", 24],
   ["(X-Ray) Reptile Disfunction", "X-Ray-Reptile-Disfunction", "L2 + R2", "Mid", "31%", 24],
   #Takeda
   ["Kunai", "Kunai", "↓ ← + 1", "Low", "7%", 25],
