@@ -17,7 +17,7 @@ characters = [
   ["Kung Lao", "Kung-Lao", "Resurrected martial arts master bearing a grudge against Raiden."],
   ["Shinnok", "Shinnok", "The fallen Elder God; traitor to his brethren."],
   ["Kano", "Kano", "Merciless criminal and leader of the Black Dragon."],
-  ["Johnny Cage", "Johnny-Cage", "World-renowned, A-list Hollywood actor and champion of Earthrealm."],
+  ["Johnny Cage", "Johnny-Cage", "A-list Hollywood actor, Earthrealm champion, proud father."],
   ["D'Vorah", "D-Vorah", "A member of the insectoid Kytinn race who acts as Kotal Kahn's advisor."],
   ["Ermac", "Ermac", "A mass of souls possessing powerful telekinetic abilities. He is many; you are one."],
   ["Erron Black", "Erron-Black", "Donning a Western-style cowboy outfit, this mercenary serves Kotal Kahn."],
@@ -152,11 +152,37 @@ moves = [
   ["Air Takedown", "Air-Takedown", "↓ → + 1", "Unblockable", "10%", 18],
   ["(X-Ray) Sunburn", "X-Ray-Sunburn", "L2 + R2", "Mid", "33%", 18],
   #Kung Jin
-  
+  ["Air Dive Kick", "Air-Dive-Kick", "↓ + 4", "Mid", "6.75%", 19],
+  ["Straight Arrow", "Straight-Arrow", "↓ → + 2", "High", "4%", 19],
+  ["Up Arrow", "Up-Arrow", "↓ ← + 2", "High", "4%", 19],
+  ["Lunge Kick", "Lunge-Kick", "← → + 3", "Mid", "7.75%", 19],
+  ["Cartwheel Drop", "Cartwheel-Drop", "↓ ← + 4", "Overhead", "7%", 19],
+  ["(X-Ray) Staff Infection", "X-Ray-Staff-Infection", "L2 + R2", "Overhead", "32%", 19],
   #Liu Kang
+  ["Fireball", "Fireball", "← → + 1", "High", "7%", 20],
+  ["Low Fireball", "Low-Fireball", "← → + 3", "Low", "7%", 20],
+  ["Air Fireball", "Air-Fireball", "← → + 1", "Mid", "7%", 20],
+  ["Bicycle Kick", "Bicycle-Kick", "→ ← → + 4", "High", "10.60%", 20],
+  ["Flying Dragon Kick", "Flying-Dragon-Kick", "← → + 2", "High", "7%", 20],
+  ["Dragon's Roar", "Dragons-Roar", "↓ ← + 2", "Mid", "7%", 20],
+  ["(X-Ray) For The Shaolin", "X-Ray-For-The-Shaolin", "L2 + R2", "Mid", "32%", 20],
   #Mileena
+  ["Tele-Kick", "Tele-Kick", "↓ ↓ + 3", "Mid", "7%", 21],
+  ["Air Tele-Kick", "Air-Tele-Kick", "↓ ↓ + 3", "Mid", "7%", 21],
+  ["Ball Roll", "Ball-Roll", "← ↓ + 4", "Mid", "5%", 21],
+  ["Sai Blast", "Sai-Blast", "← → + 1", "High", "6%", 21],
+  ["Air Sai Blast", "Air-Sai-Blast", "← → + 1", "High", "6%", 21],
+  ["(X-Ray) Let Us Dance", "X-Ray-Let-Us-Dance", "L2 + R2", "Overhead", "33.71%", 21],
   #Quan Chi
+  ["Skull", "Skull", "↓ ← + 2", "High", "6%", 22],
+  ["Air Skull", "Air-Skull", "↓ ← + 2", "Mid", "6%", 22],
+  ["Trance", "Trance", "← → + 3", "Mid", "2%", 22],
+  ["Sky Drop", "Sky-Drop", "↓ ← + 4", "Overhead", "9%", 22],
+  ["Air Sky Drop", "Air-Sky-Drop", "↓ ← + 4", "Overhead", "9%", 22],
+  ["Ground Burst", "Ground-Burst", "↓ ← + 1", "Mid", "8%", 22],
+  ["(X-Ray) Skull Krusher", "X-Ray-Skull-Krusher", "L2 + R2", "High", "32%", 22]
   #Raiden
+
   #Reptile
   #Takeda
 ]
@@ -275,10 +301,35 @@ frames = [
   ["8", "4", "20", "-6", "-2", "N/A", 93],
   ["22", "4", "40", "-5", "8", "N/A", 94],
   #Kung Jin
-
+  ["5", "14", "53", "-33", "49", "N/A", 95],
+  ["20", "200", "-170", "-12", "10", "N/A", 96],
+  ["24", "-200", "-178", "-4", "18", "N/A", 97],
+  ["9", "24", "35", "-14", "13", "N/A", 98],
+  ["23", "5", "49", "-17", "1", "N/A", 99],
+  ["20", "5", "31", "0", "0", "N/A", 100],
   #Liu Kang
+  ["11", "101", "-66", "-17", "5", "N/A", 101],
+  ["12", "101", "-67", "-16", "6", "N/A", 102],
+  ["10", "200", "-148", "-39", "-12", "N/A", 103],
+  ["16", "38", "10", "-13", "28", "N/A", 104],
+  ["13", "18", "28", "-14", "28", "N/A", 105],
+  ["18", "3", "26", "-2", "43", "N/A", 106],
+  ["23", "1", "28", "6", "3", "N/A", 107],
   #Mileena
+  ["20", "8", "28", "-19", "-8", "51", 108],
+  ["24", "8", "28", "-19", "-8", "55", 109],
+  ["8", "17", "21", "-31", "-58", "N/A", 110],
+  ["16", "200", "-171", "-11", "11", "N/A", 111],
+  ["15", "200", "-158", "-29", "-2", "N/A", 112],
+  ["24", "9", "28", "-20", "9", "N/A", 113],
   #Quan Chi
+  ["15", "101", "-63", "-20", "2", "N/A", 114],
+  ["12", "44", "16", "-42", "-20", "N/A", 115],
+  ["21", "4", "32", "-48", "80", "N/A", 116],
+  ["38", "3", "38", "-18", "11", "N/A", 117],
+  ["28", "3", "38", "-18", "11", "N/A", 118],
+  ["17", "6", "34", "-12", "11", "29", 119],
+  ["22", "200", "-139", "-25", "5", "N/A", 120]
   #Raiden
   #Reptile
   #Takeda
