@@ -6,8 +6,7 @@ class CharactersController < ApplicationController
 
   def show
     @character = Character.find(params[:id])
-    @moves = @character.moves
-    # @move = Move.New
+    @move = @character.moves
   end
 
   def new
@@ -37,7 +36,7 @@ class CharactersController < ApplicationController
   private
 
   def character_params
-    params.require(:character).permit(:name, :description)
+    params.require(:character).permit(:name, :db_name, :description)
   end
 
 end

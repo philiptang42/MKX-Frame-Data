@@ -34,9 +34,11 @@
   </nav>
 
   <%- flash.each do |key, value| -%>
-    <div class="flash flash-<%= key %>">
+  <div data-alert class="alert-box info radius" tabindex="0" aria-live="assertive" role="alertdialog">
       <%= value %>
-    </div>
+  <button tabindex="0" class="close" aria-label="Close Alert">&times;</button>
+  </div>
+
   <%- end -%>
 
   <%= yield %>

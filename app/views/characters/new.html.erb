@@ -5,14 +5,23 @@
  <%= form_for @character do |f| %>
   <div class= "row">
     <div class= "field columns small-6">
-      <%= f.label :name %>
-      <%= f.text_field :name && :db_name %>
+      <%= f.label :name, :style => "color: #ead61c;" %>
+      <%= f.text_field :name %>
+    </div>
+  </div>
+  <div class= "row">
+    <div class= "field columns small-6">
+      <%= f.label :db_name, :style => "color: #ead61c;" %>
+      (the name that is passed into the database to
+      retrieve related image files. Must contain no
+      spaces; use hyphens instead)
+      <%= f.text_field :db_name %>
     </div>
   </div>
   <br>
   <div class= "row">
     <div class= "field columns small-8">
-  <%= f.label :description %>
+  <%= f.label :description, :style => "color: #ead61c;" %>
   <%= f.text_area :description %>
     </div>
   </div>
