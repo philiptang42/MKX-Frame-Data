@@ -48,7 +48,7 @@ moves = [
   # Subzero
   ["Ice Burst", "Ice-Burst", "↓ ← + 1", "Mid", "9%", 2],
   ["Ice Ball", "Ice-Ball", "↓ → + 2", "High", "0%", 2],
-  ["Slide", "Slide", "← → + 4", "Low", "8%", 2],
+  ["Slide", "Slide-SZ", "← → + 4", "Low", "8%", 2],
   ["(X-Ray) Deep Freeze", "X-Ray-Deep-Freeze", "L2 + R2", "High", "31%", 2],
   # Cassie Cage
   ["Single Shot", "Single-Shot", "← → + 1", "High", "7%", 3],
@@ -61,7 +61,7 @@ moves = [
   ["Fan Throw", "Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Air Fan Throw", "Air-Fan-Throw", "↓ → + 1", "High", "6%", 4],
   ["Upraise", "Upraise", "↓ ← + 1", "Mid", "0%", 4],
-  ["(X-Ray) Slice and Dice", "X-Ray-Slice-and-Dice", "L2 + R2", "Overhead", "34.55%", 4],
+  ["(X-Ray) Slice And Dice", "X-Ray-Slice-And-Dice", "L2 + R2", "Overhead", "34.55%", 4],
   # Kenshi
   ["Rising Sword", "Rising-Sword", "↓ ← + 1", "Mid", "8%", 5],
   ["Spinning Blade", "Spinning-Blade", "↓ → + 1", "Overhead", "7.80%", 5],
@@ -128,7 +128,7 @@ moves = [
   ["(X-Ray) Trick Shot", "X-Ray-Trick-Shot", "L2 + R2", "Mid", "35%", 14],
   #Ferra Torr
   ["Deep Stab", "Deep-Stab", "↓ ← → + 1", "Throw", "11%", 15],
-  ["Bowl Girl", "Bowl Girl", "← → + 1", "Low", "9%", 15],
+  ["Bowl Girl", "Bowl-Girl", "← → + 1", "Low", "9%", 15],
   ["Ferra Toss", "Ferra-Toss", "↓ ← + 2", "Overhead", "10%", 15],
   ["Tuck 'n' Charge", "Tuck-n-Charge", "← → + 3", "Overhead", "9.50%", 15],
   ["(X-Ray) Bone Crusher", "X-Ray-Bone-Crusher", "L2 + R2", "Overhead", "36.70%", 15],
@@ -195,7 +195,7 @@ moves = [
   ["Acid Spit", "Acid-Spit", "↓ → + 3", "High", "5%", 24],
   ["Klaw Pounce", "Klaw-Pounce", "↓ ← + 4", "Overhead", "7%", 24],
   ["Klaw Swipe", "Klaw-Swipe", "↓ ← + 2", "Mid", "7%", 24],
-  ["Repitilian Dash", "Repitilian-Dash", "← → + 2", "Mid", "8.65%", 24],
+  ["Reptilian Dash", "Reptilian-Dash", "← → + 2", "Mid", "8.65%", 24],
   ["(X-Ray) Reptile Disfunction", "X-Ray-Reptile-Disfunction", "L2 + R2", "Mid", "31%", 24],
   #Takeda
   ["Kunai", "Kunai", "↓ ← + 1", "Low", "7%", 25],

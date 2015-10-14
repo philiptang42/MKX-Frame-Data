@@ -45,14 +45,12 @@
               <td><p><h3 class="text-center">Cancel Window:  <%= f.cancelwindow  %></h3></p></td>
             </tr>
           </table>
+          <%= video_tag(["#{m.db_name}.mp4"], :size => "320x240", :controls => true) %>
         </div>
-      </div>
-
 
     <% end %>
   <% end %>
-
-
+</div>
 </div>
 
 
