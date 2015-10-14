@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+ruby '2.0.0'
 
 gem 'kaminari'
 
@@ -55,6 +56,9 @@ group :development do
 end
 
 gem 'selenium-webdriver', '~> 2.47.1', group: [:development, :test]
+
+gem 'rails_12factor', group: :production
+
 gem 'carrierwave'
 gem 'fog'
 
