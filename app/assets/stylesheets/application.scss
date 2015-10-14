@@ -11,8 +11,8 @@
  * file per style scope.
  *
  *= require_tree .
- *= require_self
  *= require foundation_and_overrides
+ *= require_self
 
  */
  .the-index-page {
@@ -61,7 +61,7 @@
      margin-right: auto;
      max-width: initial;
   }
-  
+
   .move-properties {
     table {
       margin: 1rem auto;
