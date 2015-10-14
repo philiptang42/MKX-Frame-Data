@@ -1,6 +1,8 @@
 source 'https://rubygems.org'
 
 
+gem 'kaminari'
+
 gem 'modernizr-rails'
 
 gem 'dotenv-rails'
@@ -52,6 +54,9 @@ group :development do
   gem 'spring'
 end
 
+gem 'selenium-webdriver', '~> 2.47.1', group: [:development, :test]
+gem 'carrierwave'
+gem 'fog'
 
 gem 'rspec-rails', group: [:development, :test]
 gem 'capybara', group: [:development, :test]
