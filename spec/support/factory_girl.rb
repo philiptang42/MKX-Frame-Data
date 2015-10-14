@@ -14,13 +14,24 @@ FactoryGirl.define do
   end
 
   factory :move do
-    sequence(:db_name) {|n| "move#{n}" }
+    sequence(:db_name) { |n| "move#{n}" }
     sequence(:name) { |n| "move#{n}" }
     sequence(:button_command) { |n| "#{n}"}
     sequence(:move_type) { |n| "#{n}" }
     sequence(:damage) { |n| "#{n}%"}
 
     character
+  end
+
+  factory :frame do
+    sequence(:startup) { |n| "#{n}" }
+    sequence(:active) { |n| "#{n}" }
+    sequence(:recover) { |n| "#{n}" }
+    sequence(:blockadv) { |n| "#{n}" }
+    sequence(:hitadv) { |n| "#{n}" }
+    sequence(:cancelwindow) { |n| "#{n}" }
+
+    move
   end
 
 end

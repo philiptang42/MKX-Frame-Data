@@ -1,4 +1,4 @@
-# Mortal Kombat X Frame Data
+# Mortal Frames
 
 [ ![Codeship Status for philiptang42/MKX-Frame-Data](https://codeship.com/projects/64facdc0-42b3-0133-774d-0a794f3732af/status?branch=master)](https://codeship.com/projects/103824) [![Code Climate](https://codeclimate.com/github/philiptang42/MKX-Frame-Data/badges/gpa.svg)](https://codeclimate.com/github/philiptang42/MKX-Frame-Data) [![Coverage Status](https://coveralls.io/repos/philiptang42/MKX-Frame-Data/badge.svg?branch=master&service=github)](https://coveralls.io/github/philiptang42/MKX-Frame-Data?branch=master)
 

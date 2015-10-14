@@ -27,8 +27,8 @@
 
       <% if current_user %>
         <% if current_user.admin %>
-          <%= link_to "Add Character (Admins Only)", new_character_path, class: "button success hvr-bounce-in",
-           data: {confirm: "Here Comes a New Challenger?"} %>
+          <%= link_to "Add Character (Admins Only)", new_character_path,
+           class: "button success hvr-bounce-in" %>
         <% end %>
       <% end %>
     </div>
