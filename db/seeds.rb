@@ -48,7 +48,7 @@ moves = [
   # Subzero
   ["Ice Burst", "Ice-Burst", "↓ ← + 1", "Mid", "9%", 2],
   ["Ice Ball", "Ice-Ball", "↓ → + 2", "High", "0%", 2],
-  ["Slide", "Slide", "← → + 4", "Low", "8%", 2],
+  ["Slide", "Slide-SZ", "← → + 4", "Low", "8%", 2],
   ["(X-Ray) Deep Freeze", "X-Ray-Deep-Freeze", "L2 + R2", "High", "31%", 2],
   # Cassie Cage
   ["Single Shot", "Single-Shot", "← → + 1", "High", "7%", 3],
@@ -128,7 +128,7 @@ moves = [
   ["(X-Ray) Trick Shot", "X-Ray-Trick-Shot", "L2 + R2", "Mid", "35%", 14],
   #Ferra Torr
   ["Deep Stab", "Deep-Stab", "↓ ← → + 1", "Throw", "11%", 15],
-  ["Bowl Girl", "Bowl Girl", "← → + 1", "Low", "9%", 15],
+  ["Bowl Girl", "Bowl-Girl", "← → + 1", "Low", "9%", 15],
   ["Ferra Toss", "Ferra-Toss", "↓ ← + 2", "Overhead", "10%", 15],
   ["Tuck 'n' Charge", "Tuck-n-Charge", "← → + 3", "Overhead", "9.50%", 15],
   ["(X-Ray) Bone Crusher", "X-Ray-Bone-Crusher", "L2 + R2", "Overhead", "36.70%", 15],
