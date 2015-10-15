@@ -1,11 +1,11 @@
 <head><meta name="viewport" content="width=device-width, initial-scale=1.0"></head>
 <br>
 
-<div style="display:flex;justify-content:center;align-items:center;">
-  <div class="panel">
-    <h1 style="text-shadow: 2px 2px black">Select A Character</h1>
+  <div style="display:flex;justify-content:center;align-items:center;">
+    <div class="panel">
+      <h1 style="text-shadow: 2px 2px black">Select A Character</h1>
+    </div>
   </div>
-</div>
 
   <div class = "row index_row">
     <div class = "small-6  medium-8 small-centered large-11 column">
@@ -18,7 +18,6 @@
                       <%= character.name %>
                     </h3>
                   </div>
-
                   <div style="display:flex;justify-content:center;align-items:center;">
                     <div><%= link_to (image_tag("character_icons/#{character.name}-Icon.png")), character_path(character), :class =>"hvr-bounce-in" %></div>
                   </div>

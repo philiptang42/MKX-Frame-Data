@@ -17,6 +17,17 @@
 
  */
 
+//top-left logo
+ .top-bar .name h4 a:before {
+   background-image: image-url('MKX-Logo-Icon.jpg');
+   background-repeat: no-repeat;
+   content: "[]";
+   display: inline-block;
+   height: 57px;
+   position: relative;
+   width: 60px;
+ }
+
  .the-index-page {
    background-image: image-url('sky-temple.jpg');
    background-image: no-repeat;
@@ -46,17 +57,6 @@
     background-size: cover;
     background-color: black;
     position: relative;
-  }
-
-//top-left logo
-  .top-bar .name h4 a:before {
-    background-image: image-url('MKX-Logo-Icon.jpg');
-    background-repeat: no-repeat;
-    content: "[]";
-    display: inline-block;
-    height: 57px;
-    position: relative;
-    width: 60px;
   }
 
 //panel elements
