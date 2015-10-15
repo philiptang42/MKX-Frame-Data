@@ -29,7 +29,7 @@ class CharactersController < ApplicationController
   def destroy
     @character = Character.find(params[:id])
     @character.destroy
-    flash[:success] = "FATALITY"
+    flash[:success] = "Character Deleted"
     redirect_to "/"
   end
 
