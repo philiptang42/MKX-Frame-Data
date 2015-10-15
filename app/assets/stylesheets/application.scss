@@ -10,13 +10,14 @@
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
  *
- *= require_tree .
+
  *= require_self
  *= require foundation_and_overrides
+ *= require_tree .
 
  */
  .the-index-page {
-   background-image: url('sky-temple.jpg');
+   background-image: image-url('sky-temple.jpg');
    background-image: no-repeat;
    background-attachment: fixed;
    background-size: cover;
@@ -61,7 +62,7 @@
      margin-right: auto;
      max-width: initial;
   }
-  
+
   .move-properties {
     table {
       margin: 1rem auto;

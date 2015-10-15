@@ -1,12 +1,5 @@
 source 'https://rubygems.org'
 
-ruby '2.0.0'
-
-gem 'kaminari'
-
-gem 'modernizr-rails'
-
-gem 'dotenv-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.4'
 # Use postgresql as the database for Active Record
@@ -55,6 +48,10 @@ group :development do
   gem 'spring'
 end
 
+gem 'kaminari'
+
+gem 'dotenv-rails'
+
 gem 'selenium-webdriver', '~> 2.47.1', group: [:development, :test]
 
 gem 'rails_12factor', group: :production
@@ -71,3 +68,5 @@ gem 'valid_attribute', group: [:development, :test]
 gem 'shoulda-matchers', group: [:development, :test], require: false
 gem 'devise'
 gem 'foundation-rails'
+
+gem 'puma'
