@@ -36,6 +36,10 @@
   @import 'character_show_pages';
 
 //the default background image
+  #comments {
+    text-shadow: 2px 2px black;
+  }
+
   .the-show-page {
     background-image: no-repeat;
     background-attachment: fixed;

@@ -3,7 +3,7 @@
 <br>
 <div style="display:flex;justify-content:center;align-items:center;">
   <div class="panelzz">
-    <div class="panel">
+    <div class="panel" style="text-shadow: 2px 2px black">
       <h1><%=@character.name %></h1>
       <%=@character.description %>
     </div>
@@ -16,7 +16,7 @@
     <div class="row fullWidth">
       <div class="small-12 medium-4 columns">
         <div class="row">
-          <table class="panelzz" style="margin-top: 4.5em">
+          <table class="panelzz" style="margin-top: 4.5em;text-shadow: 2px 2px black">
             <tr>
               <td><h3 class="text-center"><%= link_to m.name, character_move_path(@character.id, m.id), :class =>"hvr-bounce-in" %></h3></td>
               <td><h3 class="text-center"><%= m.button_command %></h3></td>
@@ -33,7 +33,7 @@
       <% f = m.frames.first %>
       <div class="small-12 medium-4 columns">
         <div class="row">
-          <table class="panelzz">
+          <table class="panelzz" style="text-shadow: 2px 2px black">
             <tr>
               <td><p><h3 class="text-center">Startup: <%= f.startup %></h3></p></td>
               <td><p><h3 class="text-center">Active:  <%= f.active %></h3></p></td>
