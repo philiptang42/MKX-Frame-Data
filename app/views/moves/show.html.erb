@@ -26,7 +26,7 @@
 
 <%- if current_user -%>
   <div class="new-comment">
-    <button data-remote="true" class="button radius button-new-form">
+    <button data-remote="true" class="button radius button-new-form mall-6 large-10 large-offset-1">
     Submit Your Comment</button>
     <div class="hide comment-form">
       <div class="panelz">
@@ -57,7 +57,7 @@
   </div>
 
   <%- else -%>
-    <span>
+    <span class="small-6 large-10 large-offset-1">
       <%= link_to 'Submit Your Comment', new_user_session_path,
       class: "button radius" %>
     </span>
@@ -65,7 +65,7 @@
 
 
       <% @comments.each do |c| %>
-      <div class="panelz">
+      <div class="panelz" style="padding-bottom:10px;">
         <div class="panel small-6 large-10 large-offset-1" style="display:block;">
       <p id="comments">Written by <%= current_user.email %> <%= time_ago_in_words(c.created_at) %> ago.</p>
         <div class="panel">
@@ -74,3 +74,7 @@
         </div>
       </div>
       <% end %>
+
+      <div class="small-6 large-10 large-offset-1" id ="paginator">
+        <%= paginate @comments %>
+      </div>
