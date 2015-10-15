@@ -1,0 +1,19 @@
+<% provide(:background, @character.db_name) %>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<div style="display:flex;align-items:left;">
+  <%= link_to character_path(@character), :class =>"hvr-bounce-in" do %>
+    <i class="fa fa-arrow-circle-left fa-2x" style="padding-top: 10px;padding-left: 6px;color: yellow;"></i>
+  <% end %>
+</div>
+<div style="display:flex;justify-content:center;align-items:center;">
+  <div class="panelzz">
+    <div class="panel">
+      <h1><%=@move.name %></h1>
+    </div>
+  </div>
+</div>
+<%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{@move.db_name}.mp4"], :controls => true) %>
