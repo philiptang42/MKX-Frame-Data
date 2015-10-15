@@ -6,7 +6,6 @@ class CharactersController < ApplicationController
 
   def show
     @character = Character.find(params[:id])
-    @move = @character.moves
   end
 
   def new
@@ -19,7 +18,7 @@ class CharactersController < ApplicationController
 
     if @character.save
       redirect_to @character
-      flash[:success] = 'A New Challenge Appears'
+      flash[:success] = 'A New Challenger Appears'
     else
       flash[:errors] = @character.errors.full_messages.join(". ")
       render :new
