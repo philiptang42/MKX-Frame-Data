@@ -66,8 +66,8 @@
 
       <% @comments.each do |c| %>
       <div class="panelz">
-        <div class="panel">
-      <p id="comments">Written by <%= current_user.email %></p> <%= time_ago_in_words(@comments.created_at) %> ago
+        <div class="panel small-6 large-10 large-offset-1" style="display:block;">
+      <p id="comments">Written by <%= current_user.email %> <%= time_ago_in_words(c.created_at) %> ago.</p>
         <div class="panel">
           <p id="comments">Rating: <%= c.rating %></p>
           <p id="comments"><%= c.body %></p>
