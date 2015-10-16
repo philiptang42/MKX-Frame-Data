@@ -10,7 +10,7 @@ class Comment < ActiveRecord::Base
   validates :body, length: { minimum: 5 }
 
   def upvotes_score
-    upvotes = votes.where(upvote: 1).count
+    upvotes = comment_votes.where(upvote: 1).count
     if upvotes.nil?
       return 0
     else
@@ -19,7 +19,7 @@ class Comment < ActiveRecord::Base
   end
 
   def downvotes_score
-    downvotes = votes.where(downvote: 1).count
+    downvotes = comment_votes.where(downvote: 1).count
     if downvotes.nil?
       return 0
     else

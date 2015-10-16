@@ -13,7 +13,6 @@ class CommentsController < ApplicationController
     @comment.move_id = @move.id
     @comment.user = current_user
     if @comment.save
-      flash[:success] = 'New Comment Added'
       time_text = time_ago_in_words(@comment.created_at)
       render json: {
         rating: @comment.rating,
