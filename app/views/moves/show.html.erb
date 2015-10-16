@@ -34,7 +34,7 @@
           <p style="text-shadow: 2px 2px black">NEW COMMENT</p>
           <%= form_for [@character, @move, @comment], :id => 'comment-form' do |f| %>
             <div class= "row">
-              <div class= "field columns small-6 large-12">
+              <div class= "field columns small-12 large-12">
                 <div class="field">
                   <%= f.label :body, :style => "color: #ead61c;text-shadow: 2px 2px black" %>
                   <%= f.text_area :body, :id => 'comment-body' %>
@@ -42,7 +42,7 @@
               </div>
             </div>
             <div class= "row">
-              <div class= "field columns small-6 large-12">
+              <div class= "field columns small-8 large-8">
                 <div class="field">
                   <%= f.label :rating, :style => "color: #ead61c;text-shadow: 2px 2px black" %>
                   <%= f.select :rating, options_from_collection_for_select([1, 2, 3, 4, 5], "to_s", "to_s"), :id => 'comment_rating' %>
