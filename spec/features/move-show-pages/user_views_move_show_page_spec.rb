@@ -1,12 +1,14 @@
 require "rails_helper"
 
-feature "user sees preview video of a move", %{
+feature "user sees a move's show page", %{
   As a user
-  I want to view a move's video
-  So that I can see what the move looks like
+  I want to view a move's show page
+  So that I can see a bigger video and write comments
 } do
 
-  scenario "user sees move video" do
+  scenario "user sees show page" do
+    current_user = FactoryGirl.create(:user)
+
     sample_character = Character.create(
       db_name: "Scorpion",
       name: "Scorpion",
@@ -32,16 +34,18 @@ feature "user sees preview video of a move", %{
       move: sample_move
     )
 
-    visit character_path(sample_character)
-    
-    expect(page).to have_content("Scorpion")
-    expect(page).to have_content("undead and angry")
-    expect(page).to have_content("Spear")
-    expect(page).to have_content("5%")
-    expect(page).to have_content("6")
-    expect(page).to have_content("666")
 
-    find("#move-video").should be_visible
+    visit character_path(sample_character)
+    click_on("Spear")
+
+    save_and_open_page
+
+    expect(page).to have_content("Spear")
+
+    find("#move-video-big").should be_visible
+
+    expect(page).to have_content("Comments")
+    expect(page).to have_content("Submit Your Comment")
 
   end
 end

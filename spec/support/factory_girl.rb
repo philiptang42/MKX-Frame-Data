@@ -34,4 +34,10 @@ FactoryGirl.define do
     move
   end
 
+  factory :comment do
+    sequence(:rating) { |n| "#{n}" }
+    sequence(:body) { |n| "#{n}" }
+
+    move
+  end
 end
