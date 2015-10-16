@@ -1,5 +1,5 @@
 class CommentsController < ApplicationController
-
+  include ActionView::Helpers::DateHelper
   def new
     @character = Character.find(params[:character_id])
     @move = @character.moves.find(params[:move_id])
@@ -13,8 +13,14 @@ class CommentsController < ApplicationController
     @comment.move_id = @move.id
     @comment.user = current_user
     if @comment.save
-      redirect_to character_move_path(@character.id, @move.id)
       flash[:success] = 'New Comment Added'
+      time_text = time_ago_in_words(@comment.created_at)
+      render json: {
+        rating: @comment.rating,
+        body: @comment.body,
+        user: @comment.user.email,
+        timeText: time_text
+      }
     else
       flash[:errors] = @comment.errors.full_messages.join(". ")
       redirect_to character_move_path(@character.id, @move.id)

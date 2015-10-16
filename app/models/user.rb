@@ -12,8 +12,4 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable
 
   validates :email, presence: true, uniqueness: true
-
-  def self.search(query)
-    where("username ILIKE ?", "%#{query}%")
-  end
 end
