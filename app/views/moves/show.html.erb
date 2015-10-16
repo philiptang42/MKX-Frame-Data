@@ -20,7 +20,7 @@
 
 <div style="display:flex;justify-content:center;align-items:center;">
   <div class="panel">
-    <h2 style="text-shadow: 2px 2px black">Comments</h2>
+    <h2 style="text-shadow: 2px 2px black"`>Comments</h2>
   </div>
 </div>
 
@@ -32,12 +32,12 @@
       <div class="panelz">
         <div class="panel">
           NEW COMMENT
-          <%= form_for [@character, @move, @comment] do |f| %>
+          <%= form_for [@character, @move, @comment], :id => 'comment-form' do |f| %>
             <div class= "row">
               <div class= "field columns small-6 large-12">
                 <div class="field">
                   <%= f.label :body, :style => "color: #ead61c;" %>
-                  <%= f.text_area :body %>
+                  <%= f.text_area :body, :id => 'comment-body' %>
                 </div>
               </div>
             </div>
@@ -45,7 +45,7 @@
               <div class= "field columns small-6 large-12">
                 <div class="field">
                   <%= f.label :rating, :style => "color: #ead61c;" %>
-                  <%= f.select :rating, options_from_collection_for_select([1, 2, 3, 4, 5], "to_s", "to_s") %>
+                  <%= f.select :rating, options_from_collection_for_select([1, 2, 3, 4, 5], "to_s", "to_s"), :id => 'comment-rating' %>
                 </div>
               </div>
             </div>
@@ -68,9 +68,9 @@
       <div class="panelz" style="padding-bottom:10px;">
         <div class="panel small-6 large-10 large-offset-1" style="display:block;">
       <p id="comments">Written by <%= current_user.email %> <%= time_ago_in_words(c.created_at) %> ago.</p>
-        <div class="panel">
-          <p id="comments">Rating: <%= c.rating %></p>
-          <p id="comments"><%= c.body %></p>
+        <div class="panel", id="comments">
+          <p id="comments"><h5 style="text-shadow: 2px 2px black", id="c-rating">Rating: <%= c.rating %></h5></p>
+          <p id="comments"><h2 style="text-shadow: 2px 2px black", id="c-body"><%= c.body %></h2></p>
         </div>
       </div>
       <% end %>

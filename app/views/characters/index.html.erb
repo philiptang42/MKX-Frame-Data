@@ -15,11 +15,11 @@
               <div class="panel">
                   <div class="index-name">
                     <h3 style="text-shadow: 2px 2px black">
-                      <%= character.name %>
+                      <%= link_to character.name, character_path(character), :style => "color: #ead61c;" %>
                     </h3>
                   </div>
                   <div style="display:flex;justify-content:center;align-items:center;">
-                    <div><%= link_to (image_tag("character_icons/#{character.name}-Icon.png")), character_path(character), :class =>"hvr-bounce-in" %></div>
+                    <div id="char-icon"><%= link_to (image_tag("character_icons/#{character.name}-Icon.png")), character_path(character), :class =>"hvr-bounce-in" %></div>
                   </div>
               </div>
             </li>
