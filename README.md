@@ -9,3 +9,9 @@ https://trello.com/b/4HVhLn2p/mkx-breakable-toy
 
 Entity Relations:
 https://www.draw.io/#G0B4_KnRSm93SoUU1EcHpEYnJ1MkE
+
+### Challenges Faced
+* Using JavaScript to allow a button to reveal the Comment submission form without the page refreshing.
+* Using AJAX to submit the Comment form's contents and dynamically generate a new Comment panel on the page without refreshing, ever.
+* Reducing Asset Pipeline clutter by uploading 130+ video files, each several megabytes large, to the Amazon S3 Cloud.
+* Using Yield commands to dynamically render Character show page background images using CSS.
