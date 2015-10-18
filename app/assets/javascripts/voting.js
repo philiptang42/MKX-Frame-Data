@@ -2,18 +2,19 @@ $(".vote").click(function()
 {
   var voteType = this.id;
   var parentId = this.parentElement;
-  var reviewId = parentId.parentElement.id;
+  var commentId = parentId.parentElement.id;
   var url = window.location.pathname;
-  var foodTruckId = url.substring(url.lastIndexOf("/") + 1);
+  var CharacterId= url.substring(url.lastIndexOf("/") + 2);
+  var MoveId= url.substring(url.lastIndexOf("/") + 0);
   $.ajax({
   METHOD: "POST",
-  url: "/food_trucks/" + foodTruckId + "/votes",
+  url: "/characters/" + CharacterId +  "/moves" + MoveId + "/comment_votes",
   dataType: "JSON",
-  data: { _method:"put", review_id: reviewId, vote_type: voteType,
-         food_truck_id: foodTruckId },
+  data: { _method:"put", comment_id: commentId, vote_type: voteType,
+         character_id: CharacterId, move_id: MoveId },
   success: function(data)
   {
-    $(parentId).children("#review_score").html(data);
+    $(parentId).children("#comment_score").html(data);
   },
 });
 });
