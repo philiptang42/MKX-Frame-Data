@@ -1,13 +1,17 @@
 require "rails_helper"
 
-feature "user sees a move's show page", %{
+feature "user sees a move's comments", %{
   As a user
-  I want to view a move's show page
-  So that I can see a bigger video and write comments
+  I want to view a move's comments
+  So that I can see what people think of it
 } do
 
-  scenario "user sees show page" do
-    current_user = FactoryGirl.create(:user)
+  scenario "user submits comment" do
+    sample_user = User.create(
+      email: "blahblah@blah.com",
+      password: "whatwhat",
+      password_confirmation: "whatwhat"
+    )
 
     sample_character = Character.create(
       db_name: "Scorpion",
@@ -24,6 +28,13 @@ feature "user sees a move's show page", %{
       character: sample_character
     )
 
+    sample_comment = Comment.create(
+      rating: 3,
+      body: "oh my goodness",
+      move: sample_move,
+      user: sample_user
+    )
+
     sample_frame = Frame.create(
       startup: "6",
       active: "6",
@@ -34,16 +45,19 @@ feature "user sees a move's show page", %{
       move: sample_move
     )
 
-
     visit character_path(sample_character)
-    click_on("Spear")
+    save_and_open_page
+    visit character_move_path(sample_move)
 
     expect(page).to have_content("Spear")
 
     find("#move-video-big").should be_visible
 
+    save_and_open_page
+
     expect(page).to have_content("Comments")
     expect(page).to have_content("Submit Your Comment")
 
+    expect(page).to have_content(sample_comment.body)
   end
 end
