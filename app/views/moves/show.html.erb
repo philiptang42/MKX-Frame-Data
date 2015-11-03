@@ -16,10 +16,7 @@
     </div>
   </div>
 </div>
-<div style="small-6 columns">
-<%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{@move.db_name}.mp4"], :controls => true, :id => "move-video-big", :style => "display: block;margin: 0 auto;") %>
-</div>
-
+  <%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{@move.db_name}.mp4"], :controls => true, :id => "move-video-big", :style => "display: block;margin: 0 auto;") %>
 <div style="display:flex;justify-content:center;align-items:center;">
   <div class="panel">
     <h2 style="text-shadow: 2px 2px black"`>Comments</h2>

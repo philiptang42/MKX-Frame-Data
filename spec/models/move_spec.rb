@@ -13,7 +13,6 @@ describe Move do
 
   describe "associations" do
     it { should belong_to(:character) }
-    it { should have_many(:move_votes) }
     it { should have_many(:comments) }
     it { should have_many(:users).through(:user_moves) }
   end
