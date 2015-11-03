@@ -16,8 +16,7 @@
     </div>
   </div>
 </div>
-<%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{@move.db_name}.mp4"], :controls => true, :id => "move-video-big", :style => "display: block;margin: 0 auto;") %>
-
+  <%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{@move.db_name}.mp4"], :controls => true, :id => "move-video-big", :style => "display: block;margin: 0 auto;") %>
 <div style="display:flex;justify-content:center;align-items:center;">
   <div class="panel">
     <h2 style="text-shadow: 2px 2px black"`>Comments</h2>
@@ -66,7 +65,7 @@
   <div class="comments-container">
       <% @comments.each do |c| %>
       <div class="panelz" style="padding-bottom:10px;">
-        <div class="panel small-6 large-10 large-offset-1" style="display:block;", id="comments_panel">
+        <div class="panel small-11 large-10 large-offset-1" style="display:block;", id="comments_panel">
       <p style="text-shadow: 2px 2px black">Written by <%= current_user.email %> <%= time_ago_in_words(c.created_at) %> ago.</p>
         <div class="panel", id="comments">
           <p><h5 style="text-shadow: 2px 2px black", id="c-rating">Rating: <%= c.rating %></h5></p>
@@ -77,6 +76,6 @@
     </div>
   </div>
 
-      <div class="small-6 large-10 large-offset-1" id ="paginator">
+      <div class="small-11 large-10 large-offset-1" id ="paginator">
         <%= paginate @comments %>
       </div>

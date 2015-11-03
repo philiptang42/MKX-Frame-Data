@@ -17,6 +17,11 @@
 
  */
 
+  #move-video-big {
+    max-width: 100%;
+    height: auto;
+  }
+
 //top-left logo
  .top-bar .name h4 a:before {
    background-image: image-url('MKX-Logo-Icon.jpg');

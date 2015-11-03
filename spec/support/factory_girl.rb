@@ -3,8 +3,8 @@ require 'factory_girl'
 FactoryGirl.define do
   factory :user do
     sequence(:email) {|n| "user#{n}@example.com" }
-    password 'password'
-    password_confirmation 'password'
+    password "password"
+    password_confirmation "password"
   end
 
   factory :character do
@@ -35,9 +35,10 @@ FactoryGirl.define do
   end
 
   factory :comment do
-    sequence(:rating) { |n| "#{n}" }
-    sequence(:body) { |n| "#{n}" }
+    rating 3
+    sequence(:body) { |n| "#{n} blah blah blah" }
 
+    user
     move
   end
 end
