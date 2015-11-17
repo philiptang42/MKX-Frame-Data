@@ -4,7 +4,7 @@ $(".vote").click(function()
   var parentId = this.parentElement;
   var commentId = parentId.parentElement.id;
   var url = window.location.pathname;
-  var CharacterId = url.substring(url.lastIndexOf("/") - 7);
+  var CharacterId = url.substring(url.lastIndexOf("characters/") + 10);
   var MoveId = url.substring(url.lastIndexOf("/") + 1);
   $.ajax({
   METHOD: "POST",
