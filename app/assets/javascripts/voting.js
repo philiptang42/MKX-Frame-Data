@@ -4,11 +4,11 @@ $(".vote").click(function()
   var parentId = this.parentElement;
   var commentId = parentId.parentElement.id;
   var url = window.location.pathname;
-  var CharacterId= url.substring(url.lastIndexOf("/") + 2);
-  var MoveId= url.substring(url.lastIndexOf("/") + 0);
+  var CharacterId = url.substring(url.lastIndexOf("/") - 7);
+  var MoveId = url.substring(url.lastIndexOf("/") + 1);
   $.ajax({
   METHOD: "POST",
-  url: "/characters/" + CharacterId +  "/moves" + MoveId + "/comment_votes",
+  url: "/characters/" + CharacterId + "/comment_votes",
   dataType: "JSON",
   data: { _method:"put", comment_id: commentId, vote_type: voteType,
          character_id: CharacterId, move_id: MoveId },

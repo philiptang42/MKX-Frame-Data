@@ -30,9 +30,8 @@ ActiveRecord::Schema.define(version: 20151007160528) do
   create_table "comment_votes", force: :cascade do |t|
     t.integer  "upvote",     null: false
     t.integer  "downvote",   null: false
-    t.integer  "review_id",  null: false
+    t.integer  "comment_id", null: false
     t.integer  "user_id",    null: false
-    t.integer  "comment_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -61,9 +60,8 @@ ActiveRecord::Schema.define(version: 20151007160528) do
   create_table "move_votes", force: :cascade do |t|
     t.integer  "upvote",     null: false
     t.integer  "downvote",   null: false
-    t.integer  "review_id",  null: false
+    t.integer  "move_id",    null: false
     t.integer  "user_id",    null: false
-    t.integer  "move_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

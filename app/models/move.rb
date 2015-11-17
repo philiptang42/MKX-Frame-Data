@@ -14,7 +14,6 @@ class Move < ActiveRecord::Base
   validates :damage, presence: true
   validates :character_id, presence: true
 
-
   def upvotes_score
     upvotes = votes.where(upvote: 1).count
     if upvotes.nil?
