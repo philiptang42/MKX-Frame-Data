@@ -38,8 +38,6 @@ feature "user sees a move's show page", %{
     visit character_path(sample_character)
     click_on("Spear")
 
-    save_and_open_page
-
     expect(page).to have_content("Spear")
 
     find("#move-video-big").should be_visible

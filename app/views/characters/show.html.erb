@@ -49,9 +49,7 @@
           </table>
         </div>
       </div>
-      <div class="small-12 medium-4 columns" style="center">
-        <%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{m.db_name}.mp4"], :size => "380x300", :controls => true, :id => "move-video") %>
-      </div>
+        <%= video_tag(["https://s3.amazonaws.com/alot/mkx-clips/#{m.db_name}.mp4"], :size => "380x300", :controls => true, :id => "move-video", :style => "display: block;margin: 0 auto;") %>
     </div>
   <% end %>
 </div>

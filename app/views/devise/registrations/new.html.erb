@@ -10,14 +10,14 @@
   <%= devise_error_messages! %>
 
   <div class= "row">
-    <div class= "field columns small-5 medium-7 large-12">
+    <div class= "field columns small-6 medium-8 large-12">
     <%= f.label :email, :style => "color: #ead61c;" %><br />
     <%= f.email_field :email, autofocus: true %>
     </div>
   </div>
 
   <div class= "row">
-    <div class= "field columns small-5 medium-7 large-12">
+    <div class= "field columns small-6 medium-8 large-12">
     <%= f.label :password, :style => "color: #ead61c;" %>
     <% if @minimum_password_length %>
     <em>(<%= @minimum_password_length %> characters minimum)</em>
@@ -27,14 +27,14 @@
   </div>
 
   <div class= "row">
-    <div class= "field columns small-5 medium-7 large-12">
+    <div class= "field columns small-6 medium-8 large-12">
     <%= f.label :password_confirmation, :style => "color: #ead61c;" %><br />
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
     </div>
   </div>
 
   <div class= "row">
-    <div class= "field columns small-5 medium-7 large-12">
+    <div class= "field columns small-6 medium-8 large-12">
 
   <div class="actions">
     <%= f.submit "Sign up", class: "button" %>
