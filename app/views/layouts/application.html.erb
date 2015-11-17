@@ -15,7 +15,7 @@
     </ul>
 
     <section class="top-bar-section">
-      <ul class="right">
+      <ul align="right", style="display: block;float: right;margin: 0 auto;">
         <%- if current_user -%>
           <li class="divider"></li>
           <li id="register-button-2"><%= link_to current_user.email, edit_user_registration_path(current_user) %></li>
@@ -32,7 +32,6 @@
       </ul>
     </section>
   </nav>
-  
 
   <%- flash.each do |key, value| -%>
   <div data-alert class="alert-box info radius" tabindex="0" aria-live="assertive" role="alertdialog">
