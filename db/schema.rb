@@ -57,15 +57,6 @@ ActiveRecord::Schema.define(version: 20151007160528) do
     t.datetime "updated_at"
   end
 
-  create_table "move_votes", force: :cascade do |t|
-    t.integer  "upvote",     null: false
-    t.integer  "downvote",   null: false
-    t.integer  "move_id",    null: false
-    t.integer  "user_id",    null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
   create_table "moves", force: :cascade do |t|
     t.string   "db_name",        null: false
     t.string   "name",           null: false
