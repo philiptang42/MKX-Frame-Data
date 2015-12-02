@@ -67,7 +67,7 @@
       <% @comments.each do |c| %>
       <div class="panelz" style="padding-bottom:10px;">
         <div class="panel small-6 large-10 large-offset-1" style="display:block;", id="comments_panel">
-      <p style="text-shadow: 2px 2px black">Written by <%= current_user.email %> <%= time_ago_in_words(c.created_at) %> ago.</p>
+      <p style="text-shadow: 2px 2px black">Written <%= time_ago_in_words(c.created_at) %> ago by <%= c.user.try(:email)%>.</p>
         <div class="panel", id="comments">
 
           <% if current_user %>

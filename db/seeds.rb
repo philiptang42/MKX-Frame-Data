@@ -380,6 +380,18 @@ end
 moves.each do |move|
   name, db_name, button_command, move_type, damage, character_id = move
   m = Move.find_or_create_by!(name: name, db_name: db_name, button_command: button_command, move_type: move_type, damage: damage, character_id: character_id)
+
+  a = User.create(email: "sample_user@sample.com", password: "sample_pass", admin: false)
+
+    (1..10).to_a.each do |n|
+    Comment.find_or_create_by!(
+                              body: "Sample comment number #{n}.",
+                              rating: (2..5).to_a.sample,
+
+                              move: m,
+                              user: a
+                              )
+  end
 end
 
 frames.each do |frame|
