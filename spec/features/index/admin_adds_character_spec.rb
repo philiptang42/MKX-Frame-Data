@@ -45,4 +45,23 @@ feature "admin adds character", %{
 
     expect(page).to have_content("Predator")
   end
+
+  scenario "admin failed to add character" do
+    admin = FactoryGirl.create(:user, admin: true)
+
+    visit "/"
+    click_link('Sign In')
+
+    fill_in 'Email', with: admin.email
+    fill_in 'Password', with: admin.password
+
+    click_button 'Log in'
+
+    visit characters_path
+    click_on("Add Character (Admins Only)")
+
+    click_on("Add Character")
+
+    expect(page).to have_content("Db name can't be blank. Name can't be blank. Description can't be blank")
+  end
 end
