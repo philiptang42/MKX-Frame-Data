@@ -34,7 +34,6 @@ feature "user sees a move's show page", %{
       move: sample_move
     )
 
-
     visit character_path(sample_character)
     click_on("Spear")
 

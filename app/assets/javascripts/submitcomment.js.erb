@@ -15,8 +15,8 @@ $('#new_comment').on('submit', function(event){
             },
             dataType: "json"});
             request.success(function(data) {
-    var newCommentPanel = '<div class="panelz" style="padding-bottom:10px;"><div class="panel small-6 large-10 large-offset-1" style="display:block;", id="comments_panel"><p style="text-shadow: 2px 2px black">Written by' +
-    ' ' + data.user + ' ' + data.timeText + '' + ' ago.</p><div class="panel", id="comments"><p><h5 style="text-shadow: 2px 2px black", id="c-rating">Rating:'
+    var newCommentPanel = '<div class="panelz" style="padding-bottom:10px;"><div class="panel small-6 large-10 large-offset-1" style="display:block;", id="comments_panel"><p style="text-shadow: 2px 2px black">Written ' +
+    ' ' + data.timeText + ' ago by ' + data.user + '.</p><div class="panel", id="comments"><p><h5 style="text-shadow: 2px 2px black", id="c-rating">Rating:'
       + ' ' + data.rating + '</h5></p><p><h2 style="text-shadow: 2px 2px black", id="c-body">' + data.body + '</h2></p></div></div>';
               $(".comments-container").prepend(newCommentPanel);
             });
