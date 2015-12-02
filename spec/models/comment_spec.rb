@@ -29,4 +29,16 @@ describe Comment do
     c.score.should == 0
   end
 
+  it "upvote score should return 0" do
+    c = FactoryGirl.create(:comment)
+    c.comment_votes.where(upvote: 1).count == nil
+    c.upvotes_score.should == 0
+  end
+
+  it "downvote score should return 0" do
+    c = FactoryGirl.create(:comment)
+    c.comment_votes.where(downvote: 1).count == nil
+    c.downvotes_score.should == 0
+  end
+
 end
