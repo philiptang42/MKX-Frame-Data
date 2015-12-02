@@ -21,6 +21,7 @@ describe CommentVote do
   it "should describe class methods" do
     c = CommentVote.new
     c.upvote == 1
+    c.destroy_if_exists(1)
     c.upvote.should == nil
   end
 end
