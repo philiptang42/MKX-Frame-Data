@@ -18,10 +18,17 @@ describe CommentVote do
     it { should validate_presence_of(:downvote) }
   end
 
-  it "should describe class methods" do
+  it "should describe upvote class methods" do
     c = CommentVote.new
     c.upvote == 1
     c.destroy_if_exists(1)
     c.upvote.should == nil
+  end
+
+  it "should describe downvote class methods" do
+    c = CommentVote.new
+    c.downvote == 1
+    c.destroy_if_exists(1)
+    c.downvote.should == nil
   end
 end
