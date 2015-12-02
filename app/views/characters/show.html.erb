@@ -58,8 +58,7 @@
 
 <% if current_user %>
   <% if current_user.admin %>
-    <%= link_to "Delete Character (Admin Only)", @character, method: :delete,
-     class: "button alert hvr-bounce-in",
-     data: {confirm: "Fatality?"} %>
+    <%= link_to "Delete Character (Admins Only)", @character, method: :delete,
+     class: "button alert hvr-bounce-in" %>
   <% end %>
 <% end %>
